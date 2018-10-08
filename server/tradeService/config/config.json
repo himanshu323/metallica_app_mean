@@ -1,0 +1,19 @@
+{
+    "test":{
+
+        "PORT":3005,
+        "MONGODB_URI":"mongodb://localhost:27017/metallicaTestDB",
+        "JWT_TOKEN":"jkh98789bbjh987897dfh2dqoihf",
+        "AMQP":"amqp://mtfrbwon:d6FXQeZoNyMMLBmW8Fg3YFbZzNQoDdoZ@woodpecker.rmq.cloudamqp.com/mtfrbwon"
+
+    }
+,
+    "development":{
+
+        "PORT":3002,
+        "MONGODB_URI":"mongodb://localhost:27017/metallicaDB",
+        "JWT_TOKEN":"jh9073qbfoweihih997fa098jjkh",
+        "AMQP":"amqp://mtfrbwon:d6FXQeZoNyMMLBmW8Fg3YFbZzNQoDdoZ@woodpecker.rmq.cloudamqp.com/mtfrbwon"
+
+    }
+}

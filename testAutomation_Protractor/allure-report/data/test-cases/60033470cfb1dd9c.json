@@ -1,0 +1,63 @@
+{
+  "uid" : "60033470cfb1dd9c",
+  "name" : "search the trade",
+  "fullName" : "Trade Search Test.search the trade",
+  "historyId" : "befc418a47413cbfeadb56fcc680ae2",
+  "time" : {
+    "start" : 1538843266788,
+    "stop" : 1538843277363,
+    "duration" : 10575
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Failed: Table data validation failed",
+  "statusTrace" : "Error: Table data validation failed\n                    at TradeGrid.<anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/pages/tradeGrid.ts:156:11)\n                    at Generator.next (<anonymous>)\n                    at fulfilled (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/pages/tradeGrid.js:4:58)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)\n                From: Task: Run it(\"search the trade\") in control flow\n                    at UserContext.<anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/jasminewd2/index.js:94:19)\n                    at attempt (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n                    at QueueRunner.execute (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)\n                    at Spec.queueRunnerFactory (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)\n                    at Spec.execute (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)\n                    at UserContext.fn (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)\n                    at attempt (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n                    at runNext (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\n                From asynchronous test: \n                Error\n                    at Object.<anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.ts:42:5)\n                    at Generator.next (<anonymous>)\n                    at /Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.js:7:71\n                    at new Promise (<anonymous>)\n                    at __awaiter (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.js:3:12)\n                    at Suite.describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.ts:17:39)\n                    at addSpecsToSuite (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n                    at Env.describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n                    at describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Failed: Table data validation failed",
+    "statusTrace" : "Error: Table data validation failed\n                    at TradeGrid.<anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/pages/tradeGrid.ts:156:11)\n                    at Generator.next (<anonymous>)\n                    at fulfilled (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/pages/tradeGrid.js:4:58)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)\n                From: Task: Run it(\"search the trade\") in control flow\n                    at UserContext.<anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/jasminewd2/index.js:94:19)\n                    at attempt (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n                    at QueueRunner.execute (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)\n                    at Spec.queueRunnerFactory (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)\n                    at Spec.execute (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)\n                    at UserContext.fn (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)\n                    at attempt (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n                    at runNext (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\n                From asynchronous test: \n                Error\n                    at Object.<anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.ts:42:5)\n                    at Generator.next (<anonymous>)\n                    at /Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.js:7:71\n                    at new Promise (<anonymous>)\n                    at __awaiter (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.js:3:12)\n                    at Suite.describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.ts:17:39)\n                    at addSpecsToSuite (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n                    at Env.describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n                    at describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "57f26971f0a485e9",
+      "name" : "Screenshot",
+      "source" : "57f26971f0a485e9.png",
+      "type" : "image/png",
+      "size" : 130490
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "search the trade"
+  }, {
+    "name" : "package",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "60033470cfb1dd9c.json",
+  "parameterValues" : [ ]
+}

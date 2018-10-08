@@ -1,0 +1,106 @@
+<mat-card id="tradeCreateCard" >
+    <mat-card-title *ngIf="tradeCreateButton" >
+
+        <section  fxLayout fxLayoutAlign="end center" >
+            <button mat-raised-button color="primary" id="createTrade"(click)="onTradeCreate()" >
+        
+              <span id="createTradeLabel">Create Trade</span>
+                  <mat-icon id="addTradeIcon">
+                  
+                    add_circle
+                  </mat-icon>
+                  
+                    </button>
+                  </section>
+    </mat-card-title>
+
+    <mat-card-subtitle *ngIf="tradeEditFlag">
+
+        <!-- <mat-form-field>
+            <input type="number" matInput  [(ngModel)]="trade.tradeId" >
+          </mat-form-field> -->
+
+      <section fxLayout fxLayoutAlign="center center" id="tradeIdLabel">
+          <mat-chip-list >
+
+            <mat-chip  id="tradeIdValue" color="primary" name="tradeId" fxFlex="300px" fxFlexFill ><strong>Trade Id : {{trade.tradeId}}</strong></mat-chip>
+
+
+          </mat-chip-list>
+
+        </section>
+    </mat-card-subtitle>
+
+    <mat-card-content *ngIf="tradeCreateFlag || tradeEditFlag">
+<form  id="changeForm" (submit)="onTrade(tradeForm)" #tradeForm="ngForm"  fxLayout="column" fxLayoutAlign="center end"  fxLayoutGap="15px">
+
+  <mat-form-field>
+    <input [ngModel]="trade.tradeDate" class="tradeDate" name="tradeDate" required matInput [matDatepicker]="picker" placeholder="Trade Date" >
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+<mat-form-field>
+  <mat-select placeholder="Commodity Select" name="commodity" [ngModel]="trade.commodity" required>
+    <mat-option *ngFor="let comm of commodities" [value]="comm.value">
+      {{comm.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+ 
+<!-- <label for="side">Side</label>
+
+  <mat-checkbox color="primary" name="buy" ngModel required>Buy</mat-checkbox>
+  <mat-checkbox color="primary" name="sell" ngModel required>Sell</mat-checkbox> -->
+
+
+<mat-radio-group required name="side" [ngModel]="trade.side">
+  <label for="side">Side</label>
+  <span class="spacer"></span>
+  <mat-radio-button value="buy">Buy</mat-radio-button>
+  <span class="spacer"></span>
+  <mat-radio-button value="sell">Sell</mat-radio-button>
+</mat-radio-group>
+
+<mat-form-field>
+  <mat-select placeholder="Counterparty Select" name="counterparty" [ngModel]="trade.counterparty" required>
+    <mat-option *ngFor="let counterparty of counterparties" [value]="counterparty.value">
+      {{counterparty.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<section fxLayout="row" fxLayoutAlign="center center">
+<mat-form-field id="price" hintLabel="Price should be a number">
+  <input type="number" matInput placeholder="Price" name="price" [ngModel]="trade.price" #price="ngModel" required>
+<mat-error>Price must not be empty</mat-error>
+</mat-form-field>
+<label>USD</label>
+</section>
+
+<mat-form-field>
+  <input type="number" matInput placeholder="Quantity" name="quantity" [ngModel]="trade.quantity" required>
+</mat-form-field>
+<mat-form-field>
+  <mat-select placeholder="Location Select" name="location" [ngModel]="trade.location" required>
+    <mat-option *ngFor="let loc of locations" [value]="loc.value">
+      {{loc.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+  <!-- <mat-hint align="end">{{location.value?.length}} / 20</mat-hint> -->
+  
+
+
+<section fxLayout="row" fxLayoutAlign="center center">
+<button type="text" mat-raised-button color="warn"   (click)="onTradeCancel()">Cancel</button> 
+<span class="spacer"></span>
+  <button type="text" mat-raised-button color="primary" type="submit" [disabled]="tradeForm.invalid" *ngIf="mode==='edit'">Save</button>
+
+  <button type="text" mat-raised-button color="primary" type="submit" [disabled]="tradeForm.invalid" *ngIf="mode==='create'">Create</button>
+</section>
+
+
+  </form>
+</mat-card-content>
+</mat-card>

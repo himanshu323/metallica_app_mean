@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1538847509410' stop='1538847545838'>
+    <name>Trade Search Test</name>
+    <title>Trade Search Test</title>
+    <test-cases>
+        <test-case start='1538847509602' status='passed' stop='1538847518886'>
+            <name>login to trade search</name>
+            <title>login to trade search</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='0deb0c2e-16a6-4897-b59a-68b2554aab67-attachment.png' type='image/png' size='45037'/>
+            </attachments>
+        </test-case>
+        <test-case start='1538847518886' status='pending' stop='1538847518887'>
+            <name>search the trade</name>
+            <title>search the trade</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1538847518887' status='pending' stop='1538847518887'>
+            <name>enter the details for trade create</name>
+            <title>enter the details for trade create</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1538847518887' status='pending' stop='1538847518887'>
+            <name>delete the trade</name>
+            <title>delete the trade</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1538847518887' status='passed' stop='1538847545838'>
+            <name>edit the trade</name>
+            <title>edit the trade</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='2ede5f9a-ccc7-4f54-8b54-8ba120f01300-attachment.png' type='image/png' size='207275'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

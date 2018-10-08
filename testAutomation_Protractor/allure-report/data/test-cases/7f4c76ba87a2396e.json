@@ -1,0 +1,59 @@
+{
+  "uid" : "7f4c76ba87a2396e",
+  "name" : "login to trade search",
+  "fullName" : "Trade Search Test.login to trade search",
+  "historyId" : "6ae375572e914881bfc435298792fd87",
+  "time" : {
+    "start" : 1538808101844,
+    "stop" : 1538808111413,
+    "duration" : 9569
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "28621352547238bc",
+      "name" : "Screenshot",
+      "source" : "28621352547238bc.png",
+      "type" : "image/png",
+      "size" : 34622
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "login to trade search"
+  }, {
+    "name" : "package",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7f4c76ba87a2396e.json",
+  "parameterValues" : [ ]
+}

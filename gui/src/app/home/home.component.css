@@ -1,0 +1,35 @@
+
+
+mat-card{
+
+    width: 60%;
+    margin: auto auto;
+    
+}
+
+mat-chip{
+
+    font-size:large;
+    width: 300px;
+   
+   
+    
+}
+
+#textLabel{
+    text-align: center;
+    padding: 10px 26px;
+}
+
+mat-card-header{
+    width: 300px;
+}
+
+img{
+    height: 100px;
+    width: 200px;
+}
+
+mat-card-content{
+    font-style: oblique;
+}

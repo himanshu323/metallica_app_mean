@@ -1,0 +1,121 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Testing the Bank Manager E2E",
+    "children" : [ {
+      "name" : "Logging to Bank Manager",
+      "uid" : "6cefe2c763143ec4",
+      "parentUid" : "31c26cb58a67a89eacb91fd2858a7104",
+      "status" : "passed",
+      "time" : {
+        "start" : 1524118231317,
+        "stop" : 1524118238047,
+        "duration" : 6730
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Add Customer",
+      "uid" : "3f988930ecab35d6",
+      "parentUid" : "31c26cb58a67a89eacb91fd2858a7104",
+      "status" : "passed",
+      "time" : {
+        "start" : 1524118238047,
+        "stop" : 1524118252102,
+        "duration" : 14055
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Open Account",
+      "uid" : "68f4b598cc045c2a",
+      "parentUid" : "31c26cb58a67a89eacb91fd2858a7104",
+      "status" : "failed",
+      "time" : {
+        "start" : 1524118252102,
+        "stop" : 1524118254117,
+        "duration" : 2015
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Search Customer Details",
+      "uid" : "3f426a3f4d16ebb7",
+      "parentUid" : "31c26cb58a67a89eacb91fd2858a7104",
+      "status" : "passed",
+      "time" : {
+        "start" : 1524118254117,
+        "stop" : 1524118254872,
+        "duration" : 755
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "31c26cb58a67a89eacb91fd2858a7104"
+  }, {
+    "name" : "Trade Search Test",
+    "children" : [ {
+      "name" : "login to trade search",
+      "uid" : "b2edd9132fea7187",
+      "parentUid" : "63c2dc61807a1bf1faee6f411ce70e9e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538847509602,
+        "stop" : 1538847518886,
+        "duration" : 9284
+      },
+      "flaky" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "search the trade",
+      "uid" : "24b3bbb8a3784098",
+      "parentUid" : "63c2dc61807a1bf1faee6f411ce70e9e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1538847518886,
+        "stop" : 1538847518887,
+        "duration" : 1
+      },
+      "flaky" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "edit the trade",
+      "uid" : "a690004295506eaf",
+      "parentUid" : "63c2dc61807a1bf1faee6f411ce70e9e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538847518887,
+        "stop" : 1538847545838,
+        "duration" : 26951
+      },
+      "flaky" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "enter the details for trade create",
+      "uid" : "e31832b941644f33",
+      "parentUid" : "63c2dc61807a1bf1faee6f411ce70e9e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1538847518887,
+        "stop" : 1538847518887,
+        "duration" : 0
+      },
+      "flaky" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "delete the trade",
+      "uid" : "f607423b8a2b55a6",
+      "parentUid" : "63c2dc61807a1bf1faee6f411ce70e9e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1538847518887,
+        "stop" : 1538847518887,
+        "duration" : 0
+      },
+      "flaky" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "63c2dc61807a1bf1faee6f411ce70e9e"
+  } ]
+}

@@ -1,0 +1,91 @@
+[ {
+  "uid" : "68f4b598cc045c2a",
+  "name" : "Open Account",
+  "time" : {
+    "start" : 1524118252102,
+    "stop" : 1524118254117,
+    "duration" : 2015
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f988930ecab35d6",
+  "name" : "Add Customer",
+  "time" : {
+    "start" : 1524118238047,
+    "stop" : 1524118252102,
+    "duration" : 14055
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f607423b8a2b55a6",
+  "name" : "delete the trade",
+  "time" : {
+    "start" : 1538847518887,
+    "stop" : 1538847518887,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "24b3bbb8a3784098",
+  "name" : "search the trade",
+  "time" : {
+    "start" : 1538847518886,
+    "stop" : 1538847518887,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "a690004295506eaf",
+  "name" : "edit the trade",
+  "time" : {
+    "start" : 1538847518887,
+    "stop" : 1538847545838,
+    "duration" : 26951
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e31832b941644f33",
+  "name" : "enter the details for trade create",
+  "time" : {
+    "start" : 1538847518887,
+    "stop" : 1538847518887,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "3f426a3f4d16ebb7",
+  "name" : "Search Customer Details",
+  "time" : {
+    "start" : 1524118254117,
+    "stop" : 1524118254872,
+    "duration" : 755
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2edd9132fea7187",
+  "name" : "login to trade search",
+  "time" : {
+    "start" : 1538847509602,
+    "stop" : 1538847518886,
+    "duration" : 9284
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6cefe2c763143ec4",
+  "name" : "Logging to Bank Manager",
+  "time" : {
+    "start" : 1524118231317,
+    "stop" : 1524118238047,
+    "duration" : 6730
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

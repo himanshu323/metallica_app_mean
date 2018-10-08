@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1538825581306' stop='1538825597375'>
+    <name>Trade Search Test</name>
+    <title>Trade Search Test</title>
+    <test-cases>
+        <test-case start='1538825581306' status='passed' stop='1538825596983'>
+            <name>login to trade search</name>
+            <title>login to trade search</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='68017a9d-cafb-4ed7-99f6-a249b595ac0b-attachment.png' type='image/png' size='172214'/>
+            </attachments>
+        </test-case>
+        <test-case start='1538825596983' status='passed' stop='1538825597374'>
+            <name>search the trade</name>
+            <title>search the trade</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='4b6a31fc-438e-4cd1-9f71-58c46e9e1703-attachment.png' type='image/png' size='172119'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

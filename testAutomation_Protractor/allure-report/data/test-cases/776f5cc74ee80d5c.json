@@ -1,0 +1,59 @@
+{
+  "uid" : "776f5cc74ee80d5c",
+  "name" : "delete the trade",
+  "fullName" : "Trade Search Test.delete the trade",
+  "historyId" : "7097fd1c77779e224f8321833b0854cd",
+  "time" : {
+    "start" : 1538846378633,
+    "stop" : 1538846383328,
+    "duration" : 4695
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "64104c9d4bf79375",
+      "name" : "Screenshot",
+      "source" : "64104c9d4bf79375.png",
+      "type" : "image/png",
+      "size" : 213532
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "delete the trade"
+  }, {
+    "name" : "package",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "776f5cc74ee80d5c.json",
+  "parameterValues" : [ ]
+}

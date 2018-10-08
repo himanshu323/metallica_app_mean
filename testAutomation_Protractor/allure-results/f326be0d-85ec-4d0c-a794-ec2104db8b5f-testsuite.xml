@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1538829507308' stop='1538829545621'>
+    <name>Trade Search Test</name>
+    <title>Trade Search Test</title>
+    <test-cases>
+        <test-case start='1538829507310' status='passed' stop='1538829518138'>
+            <name>login to trade search</name>
+            <title>login to trade search</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='e8e291a3-c4c8-42af-ba5c-3183dfecefb2-attachment.png' type='image/png' size='43388'/>
+            </attachments>
+        </test-case>
+        <test-case start='1538829518138' status='passed' stop='1538829528189'>
+            <name>search the trade</name>
+            <title>search the trade</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='bf1a5800-df42-4521-be90-ddd50c447583-attachment.png' type='image/png' size='101472'/>
+            </attachments>
+        </test-case>
+        <test-case start='1538829528189' status='passed' stop='1538829545621'>
+            <name>enter the details for trade create</name>
+            <title>enter the details for trade create</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='afe10843-8e8c-4eca-8b59-d9c51ddd61a1-attachment.png' type='image/png' size='137716'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

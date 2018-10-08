@@ -1,0 +1,847 @@
+{
+  "uid" : "b2edd9132fea7187",
+  "name" : "login to trade search",
+  "fullName" : "Trade Search Test.login to trade search",
+  "historyId" : "6ae375572e914881bfc435298792fd87",
+  "time" : {
+    "start" : 1538847509602,
+    "stop" : 1538847518886,
+    "duration" : 9284
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5cc38431aa4f160",
+      "name" : "Screenshot",
+      "source" : "5cc38431aa4f160.png",
+      "type" : "image/png",
+      "size" : 45037
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "login to trade search"
+  }, {
+    "name" : "package",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1c5f67181e76d88a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538847444276,
+        "stop" : 1538847453795,
+        "duration" : 9519
+      }
+    }, {
+      "uid" : "571842e488ff7992",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538847294404,
+        "stop" : 1538847304306,
+        "duration" : 9902
+      }
+    }, {
+      "uid" : "d7f522220bf5586b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538847192500,
+        "stop" : 1538847205904,
+        "duration" : 13404
+      }
+    }, {
+      "uid" : "4fe8199ff5174403",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538847133812,
+        "stop" : 1538847143382,
+        "duration" : 9570
+      }
+    }, {
+      "uid" : "b1893f85982532b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538847051056,
+        "stop" : 1538847061311,
+        "duration" : 10255
+      }
+    }, {
+      "uid" : "d3ee29e3d97d4087",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538846510800,
+        "stop" : 1538846520768,
+        "duration" : 9968
+      }
+    }, {
+      "uid" : "e935b79d11723249",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538846369009,
+        "stop" : 1538846378632,
+        "duration" : 9623
+      }
+    }, {
+      "uid" : "919245b5ccb92427",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538846302918,
+        "stop" : 1538846312661,
+        "duration" : 9743
+      }
+    }, {
+      "uid" : "a87ab2c1e530764a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538846220876,
+        "stop" : 1538846230844,
+        "duration" : 9968
+      }
+    }, {
+      "uid" : "e55c6903d0a92d52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538846179570,
+        "stop" : 1538846189716,
+        "duration" : 10146
+      }
+    }, {
+      "uid" : "8d8e48bb5d3f0fa1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538846073605,
+        "stop" : 1538846095210,
+        "duration" : 21605
+      }
+    }, {
+      "uid" : "9206a4d0ab0cc31c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538845878761,
+        "stop" : 1538845894306,
+        "duration" : 15545
+      }
+    }, {
+      "uid" : "189183d350cee434",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538845537629,
+        "stop" : 1538845546685,
+        "duration" : 9056
+      }
+    }, {
+      "uid" : "fe5536ff301ba22f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538845394858,
+        "stop" : 1538845403929,
+        "duration" : 9071
+      }
+    }, {
+      "uid" : "cb25f3dbfdc8c3ab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538845177354,
+        "stop" : 1538845185945,
+        "duration" : 8591
+      }
+    }, {
+      "uid" : "969f22feb6bb6645",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538845056777,
+        "stop" : 1538845066142,
+        "duration" : 9365
+      }
+    }, {
+      "uid" : "65490465bf1ed20e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538844880895,
+        "stop" : 1538844889975,
+        "duration" : 9080
+      }
+    }, {
+      "uid" : "6154f1623aa77c28",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538844710765,
+        "stop" : 1538844720231,
+        "duration" : 9466
+      }
+    }, {
+      "uid" : "6589ebe58fd2842c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538844514791,
+        "stop" : 1538844523524,
+        "duration" : 8733
+      }
+    }, {
+      "uid" : "d4a059c55c59a5db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538844355954,
+        "stop" : 1538844364814,
+        "duration" : 8860
+      }
+    }, {
+      "uid" : "ae7e4e9b9118b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538844252790,
+        "stop" : 1538844262093,
+        "duration" : 9303
+      }
+    }, {
+      "uid" : "d81acfe100c35f19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538843733744,
+        "stop" : 1538843742302,
+        "duration" : 8558
+      }
+    }, {
+      "uid" : "447570761484b1b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538843541432,
+        "stop" : 1538843562244,
+        "duration" : 20812
+      }
+    }, {
+      "uid" : "879cdaf2d21e3025",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538843384196,
+        "stop" : 1538843393078,
+        "duration" : 8882
+      }
+    }, {
+      "uid" : "ba7d885b3b5a49ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538843257978,
+        "stop" : 1538843266788,
+        "duration" : 8810
+      }
+    }, {
+      "uid" : "737e5c3cd8b10c42",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538843197252,
+        "stop" : 1538843206362,
+        "duration" : 9110
+      }
+    }, {
+      "uid" : "448f162abb54b94a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538843096949,
+        "stop" : 1538843106196,
+        "duration" : 9247
+      }
+    }, {
+      "uid" : "eca969e51cbf1db1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538842915965,
+        "stop" : 1538842925058,
+        "duration" : 9093
+      }
+    }, {
+      "uid" : "e93c98b46d7e6d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829944729,
+        "stop" : 1538829953921,
+        "duration" : 9192
+      }
+    }, {
+      "uid" : "6f8a9c4ed762ef95",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(css selector, *[name=\"email\"])",
+      "time" : {
+        "start" : 1538829895710,
+        "stop" : 1538829901483,
+        "duration" : 5773
+      }
+    }, {
+      "uid" : "2be699f0aa1c305b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829751649,
+        "stop" : 1538829762733,
+        "duration" : 11084
+      }
+    }, {
+      "uid" : "e18939f8de421093",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829591067,
+        "stop" : 1538829601462,
+        "duration" : 10395
+      }
+    }, {
+      "uid" : "5fba6476404f3aa7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829507310,
+        "stop" : 1538829518138,
+        "duration" : 10828
+      }
+    }, {
+      "uid" : "6ee47cab55e195f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829451473,
+        "stop" : 1538829466479,
+        "duration" : 15006
+      }
+    }, {
+      "uid" : "bcd9e800568e3607",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829369320,
+        "stop" : 1538829379996,
+        "duration" : 10676
+      }
+    }, {
+      "uid" : "c4fcdc85f87741cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829199838,
+        "stop" : 1538829210273,
+        "duration" : 10435
+      }
+    }, {
+      "uid" : "2faf994590f1c9a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829111946,
+        "stop" : 1538829123071,
+        "duration" : 11125
+      }
+    }, {
+      "uid" : "c68783f3da7a606",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538828956944,
+        "stop" : 1538828967304,
+        "duration" : 10360
+      }
+    }, {
+      "uid" : "4f35fea1be071574",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538828736989,
+        "stop" : 1538828747420,
+        "duration" : 10431
+      }
+    }, {
+      "uid" : "ec59ae574176660e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538828619941,
+        "stop" : 1538828630663,
+        "duration" : 10722
+      }
+    }, {
+      "uid" : "c6b4e75bbe0e053b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538826961431,
+        "stop" : 1538826971305,
+        "duration" : 9874
+      }
+    }, {
+      "uid" : "687c41b1980f648c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538826914393,
+        "stop" : 1538826925009,
+        "duration" : 10616
+      }
+    }, {
+      "uid" : "972932b531add4fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538826808154,
+        "stop" : 1538826820049,
+        "duration" : 11895
+      }
+    }, {
+      "uid" : "21860e35359a6cb2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538826772776,
+        "stop" : 1538826783532,
+        "duration" : 10756
+      }
+    }, {
+      "uid" : "a7fa76f13585b415",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538826692190,
+        "stop" : 1538826701633,
+        "duration" : 9443
+      }
+    }, {
+      "uid" : "57519d1f7b15dc51",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538826614658,
+        "stop" : 1538826625377,
+        "duration" : 10719
+      }
+    }, {
+      "uid" : "4a99e236f53fccca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538826506722,
+        "stop" : 1538826519366,
+        "duration" : 12644
+      }
+    }, {
+      "uid" : "b02ace77b55eeb0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538826323628,
+        "stop" : 1538826336649,
+        "duration" : 13021
+      }
+    }, {
+      "uid" : "6f208298ffd2442",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538825581306,
+        "stop" : 1538825596983,
+        "duration" : 15677
+      }
+    }, {
+      "uid" : "f94dfe062725fece",
+      "status" : "failed",
+      "statusDetails" : "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+      "time" : {
+        "start" : 1538825238391,
+        "stop" : 1538825270890,
+        "duration" : 32499
+      }
+    }, {
+      "uid" : "310f7873c410954e",
+      "status" : "failed",
+      "statusDetails" : "ScriptTimeoutError: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538825127962,
+        "stop" : 1538825151989,
+        "duration" : 24027
+      }
+    }, {
+      "uid" : "1293142573e39016",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538824990495,
+        "stop" : 1538825016227,
+        "duration" : 25732
+      }
+    }, {
+      "uid" : "8f779ce2d8ae02f7",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538824822903,
+        "stop" : 1538824845548,
+        "duration" : 22645
+      }
+    }, {
+      "uid" : "a9a4bcaa54a6b690",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538824525320,
+        "stop" : 1538824549266,
+        "duration" : 23946
+      }
+    }, {
+      "uid" : "62de6e18ce1c7fc8",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538811873502,
+        "stop" : 1538811899267,
+        "duration" : 25765
+      }
+    }, {
+      "uid" : "3667d89f5a482d79",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538811493178,
+        "stop" : 1538811516107,
+        "duration" : 22929
+      }
+    }, {
+      "uid" : "d680dfc71ad3e98",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538811359627,
+        "stop" : 1538811381865,
+        "duration" : 22238
+      }
+    }, {
+      "uid" : "b6ca9fb2e34b84b",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538811177938,
+        "stop" : 1538811202050,
+        "duration" : 24112
+      }
+    }, {
+      "uid" : "b7ee0a8193b3c80f",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538811106628,
+        "stop" : 1538811128959,
+        "duration" : 22331
+      }
+    }, {
+      "uid" : "4ad413d1e9870aa8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538810846646,
+        "stop" : 1538810858288,
+        "duration" : 11642
+      }
+    }, {
+      "uid" : "e55f4ff32ab20b21",
+      "status" : "failed",
+      "statusDetails" : "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+      "time" : {
+        "start" : 1538810740093,
+        "stop" : 1538810776854,
+        "duration" : 36761
+      }
+    }, {
+      "uid" : "86a02b81ced702aa",
+      "status" : "failed",
+      "statusDetails" : "Failed: invalid selector: Unable to locate an element with the xpath expression //span[text()='Login' because of the following error:\n                SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//span[text()='Login'' is not a valid XPath expression.\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538810648802,
+        "stop" : 1538810657793,
+        "duration" : 8991
+      }
+    }, {
+      "uid" : "e4433ab5f7819133",
+      "status" : "failed",
+      "statusDetails" : "Failed: invalid selector: Unable to locate an element with the xpath expression //span[text()='Login' because of the following error:\n                SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//span[text()='Login'' is not a valid XPath expression.\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538810569716,
+        "stop" : 1538810580227,
+        "duration" : 10511
+      }
+    }, {
+      "uid" : "9baf12fcb5a3b5b9",
+      "status" : "failed",
+      "statusDetails" : "InvalidSelectorError: invalid selector: Unable to locate an element with the xpath expression //span[text()='Login' because of the following error:\n                SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//span[text()='Login'' is not a valid XPath expression.\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538810470262,
+        "stop" : 1538810479763,
+        "duration" : 9501
+      }
+    }, {
+      "uid" : "9b0c665ad03ebcca",
+      "status" : "failed",
+      "statusDetails" : "InvalidSelectorError: invalid selector: Unable to locate an element with the xpath expression //span[text()='Login' because of the following error:\n                SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//span[text()='Login'' is not a valid XPath expression.\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538810411672,
+        "stop" : 1538810422553,
+        "duration" : 10881
+      }
+    }, {
+      "uid" : "5615d6fed40d6f7d",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(xpath, //form[@id='searchForm']//mat-select[@name='commodity'])",
+      "time" : {
+        "start" : 1538810268290,
+        "stop" : 1538810286497,
+        "duration" : 18207
+      }
+    }, {
+      "uid" : "942da4c460304f57",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538810155497,
+        "stop" : 1538810183974,
+        "duration" : 28477
+      }
+    }, {
+      "uid" : "8e2986bc79b96afb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538810038885,
+        "stop" : 1538810049725,
+        "duration" : 10840
+      }
+    }, {
+      "uid" : "31d796437eff29b5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538809956109,
+        "stop" : 1538809966130,
+        "duration" : 10021
+      }
+    }, {
+      "uid" : "2ee263f7e0599ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538809904564,
+        "stop" : 1538809914416,
+        "duration" : 9852
+      }
+    }, {
+      "uid" : "885fe37a13bb6579",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538809811926,
+        "stop" : 1538809820829,
+        "duration" : 8903
+      }
+    }, {
+      "uid" : "10e888c0711a42bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538809675432,
+        "stop" : 1538809686386,
+        "duration" : 10954
+      }
+    }, {
+      "uid" : "f4fb3a1d4a0a381b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538809584542,
+        "stop" : 1538809593382,
+        "duration" : 8840
+      }
+    }, {
+      "uid" : "bd36a0e15b5da17e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538809469237,
+        "stop" : 1538809482429,
+        "duration" : 13192
+      }
+    }, {
+      "uid" : "7615f6004d21acd6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538809421667,
+        "stop" : 1538809431198,
+        "duration" : 9531
+      }
+    }, {
+      "uid" : "acfd83927ef1ee28",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538809224244,
+        "stop" : 1538809233319,
+        "duration" : 9075
+      }
+    }, {
+      "uid" : "5c62ff2bc74fd16a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538809098862,
+        "stop" : 1538809109316,
+        "duration" : 10454
+      }
+    }, {
+      "uid" : "58350c7ac0eb9c7b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538808920883,
+        "stop" : 1538808936946,
+        "duration" : 16063
+      }
+    }, {
+      "uid" : "c0895ab112b23855",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538808822870,
+        "stop" : 1538808832627,
+        "duration" : 9757
+      }
+    }, {
+      "uid" : "ccaa0e490ef985ee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538808744393,
+        "stop" : 1538808753232,
+        "duration" : 8839
+      }
+    }, {
+      "uid" : "80fe724da7639d1e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538808694781,
+        "stop" : 1538808705447,
+        "duration" : 10666
+      }
+    }, {
+      "uid" : "94a27c9965b4ead6",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(css selector, *[name=\"passord\"])",
+      "time" : {
+        "start" : 1538808230115,
+        "stop" : 1538808235082,
+        "duration" : 4967
+      }
+    }, {
+      "uid" : "7f4c76ba87a2396e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538808101844,
+        "stop" : 1538808111413,
+        "duration" : 9569
+      }
+    }, {
+      "uid" : "2d7ae9856a646dcf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538807885734,
+        "stop" : 1538807896022,
+        "duration" : 10288
+      }
+    }, {
+      "uid" : "75d08bfc60676314",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538807820632,
+        "stop" : 1538807828979,
+        "duration" : 8347
+      }
+    }, {
+      "uid" : "cd09ab3a77be537a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538807599293,
+        "stop" : 1538807603532,
+        "duration" : 4239
+      }
+    }, {
+      "uid" : "346818d1d4ca7632",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538807295273,
+        "stop" : 1538807300409,
+        "duration" : 5136
+      }
+    }, {
+      "uid" : "960364e95ee7cfd6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538807189415,
+        "stop" : 1538807189418,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "9a2857d774e8b4b2",
+      "status" : "failed",
+      "statusDetails" : "Failed: Cannot read property 'basePage' of undefined",
+      "time" : {
+        "start" : 1538807023734,
+        "stop" : 1538807023757,
+        "duration" : 23
+      }
+    }, {
+      "uid" : "f907492350f05e8b",
+      "status" : "failed",
+      "statusDetails" : "Failed: Cannot read property 'basePage' of undefined",
+      "time" : {
+        "start" : 1538806911556,
+        "stop" : 1538806911571,
+        "duration" : 15
+      }
+    }, {
+      "uid" : "afb162d02e6cb455",
+      "status" : "failed",
+      "statusDetails" : "Failed: Cannot read property 'basePage' of undefined",
+      "time" : {
+        "start" : 1538806844146,
+        "stop" : 1538806844170,
+        "duration" : 24
+      }
+    }, {
+      "uid" : "ad7c8143ee2f48fb",
+      "status" : "failed",
+      "statusDetails" : "Failed: Cannot read property 'basePage' of undefined",
+      "time" : {
+        "start" : 1538806781460,
+        "stop" : 1538806781478,
+        "duration" : 18
+      }
+    }, {
+      "uid" : "728ffcf17effa637",
+      "status" : "failed",
+      "statusDetails" : "Failed: Cannot read property 'basePage' of undefined",
+      "time" : {
+        "start" : 1538806746653,
+        "stop" : 1538806746674,
+        "duration" : 21
+      }
+    }, {
+      "uid" : "785608aae220a0db",
+      "status" : "failed",
+      "statusDetails" : "Failed: Cannot read property 'basePage' of undefined",
+      "time" : {
+        "start" : 1538806693086,
+        "stop" : 1538806693110,
+        "duration" : 24
+      }
+    }, {
+      "uid" : "42166ff456ac6ede",
+      "status" : "failed",
+      "statusDetails" : "Failed: Cannot read property 'basePage' of undefined",
+      "time" : {
+        "start" : 1538806571091,
+        "stop" : 1538806571116,
+        "duration" : 25
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b2edd9132fea7187.json",
+  "parameterValues" : [ ]
+}

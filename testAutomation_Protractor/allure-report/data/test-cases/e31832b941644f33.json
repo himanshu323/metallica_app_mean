@@ -1,0 +1,410 @@
+{
+  "uid" : "e31832b941644f33",
+  "name" : "enter the details for trade create",
+  "fullName" : "Trade Search Test.enter the details for trade create",
+  "historyId" : "32c5dc11fcc8a76c034ffd60831e3b3f",
+  "time" : {
+    "start" : 1538847518887,
+    "stop" : 1538847518887,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Temporarily disabled with xit",
+  "statusTrace" : "",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "enter the details for trade create"
+  }, {
+    "name" : "package",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1c1aaf35ef8f6a6",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538847453796,
+        "stop" : 1538847453796,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "bfa12872c0097a9a",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538847304307,
+        "stop" : 1538847304307,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b3be2c448e6f9292",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538847205905,
+        "stop" : 1538847205905,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "86af562da3128ddb",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538847143382,
+        "stop" : 1538847143382,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "61a2727764e050a4",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538847061312,
+        "stop" : 1538847061312,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "23efad93acadce67",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538846520769,
+        "stop" : 1538846520769,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "902ddba8a317a134",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538846378633,
+        "stop" : 1538846378633,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2f2d4c950ae0c5f1",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538846312662,
+        "stop" : 1538846312662,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c5db34ccb1e21deb",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538846230846,
+        "stop" : 1538846230846,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6d0649982a74f25c",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538846189717,
+        "stop" : 1538846189717,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1172cb2067d89fff",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538846095223,
+        "stop" : 1538846095223,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c6258fd8fbe23809",
+      "status" : "failed",
+      "statusDetails" : "Failed: tradeId.trim is not a function",
+      "time" : {
+        "start" : 1538845959408,
+        "stop" : 1538845960265,
+        "duration" : 857
+      }
+    }, {
+      "uid" : "566acbcf95a2543c",
+      "status" : "failed",
+      "statusDetails" : "Failed: unknown error: Element <span class=\"mat-button-wrapper\">...</span> is not clickable at point (1129, 728). Other element would receive the click: <mat-sidenav-content _ngcontent-c0=\"\" class=\"mat-drawer-content mat-sidenav-content\">...</mat-sidenav-content>\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538845916592,
+        "stop" : 1538845959408,
+        "duration" : 42816
+      }
+    }, {
+      "uid" : "64e7e51442ac43fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538845564961,
+        "stop" : 1538845587061,
+        "duration" : 22100
+      }
+    }, {
+      "uid" : "1a130af522f959a",
+      "status" : "failed",
+      "statusDetails" : "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+      "time" : {
+        "start" : 1538845422288,
+        "stop" : 1538845473569,
+        "duration" : 51281
+      }
+    }, {
+      "uid" : "c5a8ca9368d585c7",
+      "status" : "failed",
+      "statusDetails" : "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+      "time" : {
+        "start" : 1538845205425,
+        "stop" : 1538845266175,
+        "duration" : 60750
+      }
+    }, {
+      "uid" : "24bd492db94a83cb",
+      "status" : "failed",
+      "statusDetails" : "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+      "time" : {
+        "start" : 1538845086376,
+        "stop" : 1538845141944,
+        "duration" : 55568
+      }
+    }, {
+      "uid" : "e70252ba699e6259",
+      "status" : "failed",
+      "statusDetails" : "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+      "time" : {
+        "start" : 1538844904398,
+        "stop" : 1538844965152,
+        "duration" : 60754
+      }
+    }, {
+      "uid" : "503418576a462a70",
+      "status" : "failed",
+      "statusDetails" : "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+      "time" : {
+        "start" : 1538844734438,
+        "stop" : 1538844786474,
+        "duration" : 52036
+      }
+    }, {
+      "uid" : "b45906709ec55253",
+      "status" : "failed",
+      "statusDetails" : "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+      "time" : {
+        "start" : 1538844537808,
+        "stop" : 1538844568576,
+        "duration" : 30768
+      }
+    }, {
+      "uid" : "45384fda5492e341",
+      "status" : "failed",
+      "statusDetails" : "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+      "time" : {
+        "start" : 1538844378986,
+        "stop" : 1538844439791,
+        "duration" : 60805
+      }
+    }, {
+      "uid" : "5746226d78dec031",
+      "status" : "failed",
+      "statusDetails" : "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+      "time" : {
+        "start" : 1538844276446,
+        "stop" : 1538844307403,
+        "duration" : 30957
+      }
+    }, {
+      "uid" : "60e299e0aa6800e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538843756578,
+        "stop" : 1538843779335,
+        "duration" : 22757
+      }
+    }, {
+      "uid" : "3533fbe3e561cebf",
+      "status" : "failed",
+      "statusDetails" : "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+      "time" : {
+        "start" : 1538843573058,
+        "stop" : 1538843606201,
+        "duration" : 33143
+      }
+    }, {
+      "uid" : "c2f198e3f6f1616b",
+      "status" : "failed",
+      "statusDetails" : "Failed: unknown error: Element <span class=\"mat-button-wrapper\">...</span> is not clickable at point (1129, 728). Other element would receive the click: <mat-sidenav-content _ngcontent-c0=\"\" class=\"mat-drawer-content mat-sidenav-content\">...</mat-sidenav-content>\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538843403626,
+        "stop" : 1538843416796,
+        "duration" : 13170
+      }
+    }, {
+      "uid" : "9be34dd4c34f7e12",
+      "status" : "failed",
+      "statusDetails" : "Failed: unknown error: Element <span class=\"mat-button-wrapper\">...</span> is not clickable at point (1129, 728). Other element would receive the click: <mat-sidenav-content _ngcontent-c0=\"\" class=\"mat-drawer-content mat-sidenav-content\">...</mat-sidenav-content>\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538843277363,
+        "stop" : 1538843290572,
+        "duration" : 13209
+      }
+    }, {
+      "uid" : "10109efa2a2bcba",
+      "status" : "failed",
+      "statusDetails" : "Failed: unknown error: Element <span class=\"mat-button-wrapper\">...</span> is not clickable at point (1129, 728). Other element would receive the click: <mat-sidenav-content _ngcontent-c0=\"\" class=\"mat-drawer-content mat-sidenav-content\">...</mat-sidenav-content>\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538843217097,
+        "stop" : 1538843230437,
+        "duration" : 13340
+      }
+    }, {
+      "uid" : "5e86b1bd586fb84b",
+      "status" : "failed",
+      "statusDetails" : "Failed: unknown error: Element <span class=\"mat-button-wrapper\">...</span> is not clickable at point (1129, 728). Other element would receive the click: <mat-sidenav-content _ngcontent-c0=\"\" class=\"mat-drawer-content mat-sidenav-content\">...</mat-sidenav-content>\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538843112663,
+        "stop" : 1538843142189,
+        "duration" : 29526
+      }
+    }, {
+      "uid" : "9e1d6201a98e3883",
+      "status" : "failed",
+      "statusDetails" : "Failed: unknown error: Element <span class=\"mat-button-wrapper\">...</span> is not clickable at point (1129, 728). Other element would receive the click: <mat-sidenav-content _ngcontent-c0=\"\" class=\"mat-drawer-content mat-sidenav-content\">...</mat-sidenav-content>\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538842931740,
+        "stop" : 1538842944619,
+        "duration" : 12879
+      }
+    }, {
+      "uid" : "275b093e966c1334",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829953922,
+        "stop" : 1538829977765,
+        "duration" : 23843
+      }
+    }, {
+      "uid" : "190d0d77c79b0b85",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(css selector, *[id=\"createTrade\"])",
+      "time" : {
+        "start" : 1538829901484,
+        "stop" : 1538829901984,
+        "duration" : 500
+      }
+    }, {
+      "uid" : "fef22105b3ad7f3f",
+      "status" : "failed",
+      "statusDetails" : "Failed: unknown error: Element <span class=\"mat-button-wrapper\">...</span> is not clickable at point (1129, 728). Other element would receive the click: <mat-sidenav-content _ngcontent-c0=\"\" class=\"mat-drawer-content mat-sidenav-content\">...</mat-sidenav-content>\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538829762734,
+        "stop" : 1538829778848,
+        "duration" : 16114
+      }
+    }, {
+      "uid" : "8f3ac28d57f907e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829601463,
+        "stop" : 1538829620699,
+        "duration" : 19236
+      }
+    }, {
+      "uid" : "86e2dd24ed28d93b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829528189,
+        "stop" : 1538829545621,
+        "duration" : 17432
+      }
+    }, {
+      "uid" : "51b1ee8eb85329a1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829476239,
+        "stop" : 1538829486571,
+        "duration" : 10332
+      }
+    }, {
+      "uid" : "706e3245829a74b5",
+      "status" : "failed",
+      "statusDetails" : "Failed: unknown error: Element <span class=\"mat-button-wrapper\">...</span> is not clickable at point (1129, 728). Other element would receive the click: <mat-sidenav-content _ngcontent-c0=\"\" class=\"mat-drawer-content mat-sidenav-content\">...</mat-sidenav-content>\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538829389806,
+        "stop" : 1538829397420,
+        "duration" : 7614
+      }
+    }, {
+      "uid" : "abfa5c0f9933c57f",
+      "status" : "failed",
+      "statusDetails" : "Failed: unknown error: Element <span class=\"mat-button-wrapper\">...</span> is not clickable at point (1129, 728). Other element would receive the click: <mat-sidenav-content _ngcontent-c0=\"\" class=\"mat-drawer-content mat-sidenav-content\">...</mat-sidenav-content>\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538829220298,
+        "stop" : 1538829223642,
+        "duration" : 3344
+      }
+    }, {
+      "uid" : "e4984834d83666e9",
+      "status" : "failed",
+      "statusDetails" : "Failed: unknown error: Element <span class=\"mat-button-wrapper\">...</span> is not clickable at point (1129, 728). Other element would receive the click: <mat-sidenav-content _ngcontent-c0=\"\" class=\"mat-drawer-content mat-sidenav-content\">...</mat-sidenav-content>\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538829133829,
+        "stop" : 1538829137617,
+        "duration" : 3788
+      }
+    }, {
+      "uid" : "4a8bcbe269804328",
+      "status" : "failed",
+      "statusDetails" : "Failed: unknown error: Element <span class=\"mat-button-wrapper\">...</span> is not clickable at point (1129, 728). Other element would receive the click: <mat-sidenav-content _ngcontent-c0=\"\" class=\"mat-drawer-content mat-sidenav-content\">...</mat-sidenav-content>\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538828979405,
+        "stop" : 1538828984195,
+        "duration" : 4790
+      }
+    }, {
+      "uid" : "9b267fce89741db6",
+      "status" : "failed",
+      "statusDetails" : "Failed: each key must be a number of string; got undefined",
+      "time" : {
+        "start" : 1538828756391,
+        "stop" : 1538828757421,
+        "duration" : 1030
+      }
+    }, {
+      "uid" : "cfc359223e2e9f49",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(css selector, *[id=\"changeForm\"])",
+      "time" : {
+        "start" : 1538828636621,
+        "stop" : 1538828637106,
+        "duration" : 485
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e31832b941644f33.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,141 @@
+{
+  "uid" : "f607423b8a2b55a6",
+  "name" : "delete the trade",
+  "fullName" : "Trade Search Test.delete the trade",
+  "historyId" : "7097fd1c77779e224f8321833b0854cd",
+  "time" : {
+    "start" : 1538847518887,
+    "stop" : 1538847518887,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Temporarily disabled with xit",
+  "statusTrace" : "",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "delete the trade"
+  }, {
+    "name" : "package",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "fde037ddc0b68831",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538847453796,
+        "stop" : 1538847453796,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "bbf0429c5215a71c",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538847304307,
+        "stop" : 1538847304307,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e9749f2053312bfb",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538847205905,
+        "stop" : 1538847205905,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "da1edcbfe6019171",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538847143382,
+        "stop" : 1538847143383,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "faba464f299d04e8",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538847061312,
+        "stop" : 1538847061312,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9f58dd340d5bf219",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538846520769,
+        "stop" : 1538846525497,
+        "duration" : 4728
+      }
+    }, {
+      "uid" : "776f5cc74ee80d5c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538846378633,
+        "stop" : 1538846383328,
+        "duration" : 4695
+      }
+    }, {
+      "uid" : "5176653a6e62d45c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538846312662,
+        "stop" : 1538846314142,
+        "duration" : 1480
+      }
+    }, {
+      "uid" : "ba44d1700ef4aa53",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538846230846,
+        "stop" : 1538846232523,
+        "duration" : 1677
+      }
+    }, {
+      "uid" : "4e1fece58af5661a",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(xpath, //table[@id='tradeTable']/tbody/tr[0]//td[contains(@class,'tradeId')])",
+      "time" : {
+        "start" : 1538846189717,
+        "stop" : 1538846190732,
+        "duration" : 1015
+      }
+    }, {
+      "uid" : "e1210d031f54f2b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538846095223,
+        "stop" : 1538846101954,
+        "duration" : 6731
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f607423b8a2b55a6.json",
+  "parameterValues" : [ ]
+}

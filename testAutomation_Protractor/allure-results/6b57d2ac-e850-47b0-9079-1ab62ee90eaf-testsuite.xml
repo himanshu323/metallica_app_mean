@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1524118231316' stop='1524118254872'>
+    <name>Testing the Bank Manager E2E</name>
+    <title>Testing the Bank Manager E2E</title>
+    <test-cases>
+        <test-case start='1524118231317' status='passed' stop='1524118238047'>
+            <name>Logging to Bank Manager</name>
+            <title>Logging to Bank Manager</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1524118238047' status='passed' stop='1524118252102'>
+            <name>Add Customer</name>
+            <title>Add Customer</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='db2a375f-b22c-4165-af7f-177536eabed8-attachment.png' type='image/png' size='26715'/>
+            </attachments>
+        </test-case>
+        <test-case start='1524118252102' status='failed' stop='1524118254117'>
+            <name>Open Account</name>
+            <title>Open Account</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='2ae021ec-f1da-40a3-bd36-4c8b24db3f0f-attachment.png' type='image/png' size='34623'/>
+            </attachments>
+            <failure>
+                <message>Expected true to be false.</message>
+                <stack-trace>Error: Failed expectation
+                    at Object.&lt;anonymous> (C:\Users\haro2\Documents\Protractor_latest\Cucumber\Cucumber\protractorProj\EACourseApp\TestApp\specs\BankManagerTest.ts:54:22)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (C:\Users\haro2\Documents\Protractor_latest\Cucumber\Cucumber\protractorProj\EACourseApp\TestApp\specs\BankManagerTest.js:4:58)
+                    at &lt;anonymous>
+                    at process._tickCallback (internal/process/next_tick.js:188:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1524118254117' status='passed' stop='1524118254872'>
+            <name>Search Customer Details</name>
+            <title>Search Customer Details</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='0a5f6b86-68d1-4496-8bd7-8acb0bf1bd39-attachment.png' type='image/png' size='17159'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

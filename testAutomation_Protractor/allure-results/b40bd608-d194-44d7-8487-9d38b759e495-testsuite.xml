@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1538829591065' stop='1538829620701'>
+    <name>Trade Search Test</name>
+    <title>Trade Search Test</title>
+    <test-cases>
+        <test-case start='1538829591067' status='passed' stop='1538829601462'>
+            <name>login to trade search</name>
+            <title>login to trade search</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='770fd7b3-261f-4011-8744-2a1eedaf5ddd-attachment.png' type='image/png' size='44923'/>
+            </attachments>
+        </test-case>
+        <test-case start='1538829601462' status='pending' stop='1538829601463'>
+            <name>search the trade</name>
+            <title>search the trade</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1538829601463' status='passed' stop='1538829620699'>
+            <name>enter the details for trade create</name>
+            <title>enter the details for trade create</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='bcb1a226-d4f3-46b4-88dc-80c96b104997-attachment.png' type='image/png' size='185234'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,37 @@
+<mat-card >
+
+        <mat-card-title>
+           Trade Login
+        </mat-card-title>
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+
+    
+
+<form   (submit)="onLogin(loginForm)" #loginForm="ngForm" *ngIf="!isLoading"  >
+
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="15px" >
+    <mat-form-field >
+
+            <input type="email" matInput placeholder="Email" name="email" ngModel #email="ngModel"  required email>
+
+            <mat-error *ngIf="email.invalid"> Invalid Email </mat-error>
+
+    </mat-form-field>
+
+
+    <mat-form-field>
+
+        <input type="password" placeholder="Password" matInput  name="password" ngModel #password="ngModel" required>
+
+        <mat-error *ngIf="password.invalid"> Invalid Password </mat-error>
+    </mat-form-field>
+
+</mat-card-content>
+<mat-card-actions fxLayoutAlign="center center">
+    <button mat-raised-button color="primary" type="submit" id="loginButton">Login</button>
+
+</mat-card-actions>
+
+
+    </form>
+</mat-card>

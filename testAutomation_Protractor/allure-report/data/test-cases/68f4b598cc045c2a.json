@@ -1,0 +1,69 @@
+{
+  "uid" : "68f4b598cc045c2a",
+  "name" : "Open Account",
+  "fullName" : "Testing the Bank Manager E2E.Open Account",
+  "historyId" : "c3c88447208591c896720e909ad9ea5",
+  "time" : {
+    "start" : 1524118252102,
+    "stop" : 1524118254117,
+    "duration" : 2015
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expected true to be false.",
+  "statusTrace" : "Error: Failed expectation\n                    at Object.<anonymous> (C:\\Users\\haro2\\Documents\\Protractor_latest\\Cucumber\\Cucumber\\protractorProj\\EACourseApp\\TestApp\\specs\\BankManagerTest.ts:54:22)\n                    at Generator.next (<anonymous>)\n                    at fulfilled (C:\\Users\\haro2\\Documents\\Protractor_latest\\Cucumber\\Cucumber\\protractorProj\\EACourseApp\\TestApp\\specs\\BankManagerTest.js:4:58)\n                    at <anonymous>\n                    at process._tickCallback (internal/process/next_tick.js:188:7)",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Expected true to be false.",
+    "statusTrace" : "Error: Failed expectation\n                    at Object.<anonymous> (C:\\Users\\haro2\\Documents\\Protractor_latest\\Cucumber\\Cucumber\\protractorProj\\EACourseApp\\TestApp\\specs\\BankManagerTest.ts:54:22)\n                    at Generator.next (<anonymous>)\n                    at fulfilled (C:\\Users\\haro2\\Documents\\Protractor_latest\\Cucumber\\Cucumber\\protractorProj\\EACourseApp\\TestApp\\specs\\BankManagerTest.js:4:58)\n                    at <anonymous>\n                    at process._tickCallback (internal/process/next_tick.js:188:7)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6573e381069822c4",
+      "name" : "Screenshot",
+      "source" : "6573e381069822c4.png",
+      "type" : "image/png",
+      "size" : 34623
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Testing the Bank Manager E2E"
+  }, {
+    "name" : "testClass",
+    "value" : "Testing the Bank Manager E2E"
+  }, {
+    "name" : "testMethod",
+    "value" : "Open Account"
+  }, {
+    "name" : "package",
+    "value" : "Testing the Bank Manager E2E"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "68f4b598cc045c2a.json",
+  "parameterValues" : [ ]
+}

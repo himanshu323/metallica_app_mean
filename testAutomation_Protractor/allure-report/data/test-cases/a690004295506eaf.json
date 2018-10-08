@@ -1,0 +1,104 @@
+{
+  "uid" : "a690004295506eaf",
+  "name" : "edit the trade",
+  "fullName" : "Trade Search Test.edit the trade",
+  "historyId" : "f5abd6537d166e05d12a2ba24659e11e",
+  "time" : {
+    "start" : 1538847518887,
+    "stop" : 1538847545838,
+    "duration" : 26951
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2535ead82a1b4c29",
+      "name" : "Screenshot",
+      "source" : "2535ead82a1b4c29.png",
+      "type" : "image/png",
+      "size" : 207275
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "edit the trade"
+  }, {
+    "name" : "package",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c5f35b5ec90dfc9b",
+      "status" : "failed",
+      "statusDetails" : "Failed: unknown error: Element <span class=\"mat-button-wrapper\">...</span> is not clickable at point (1129, 728). Other element would receive the click: <mat-sidenav-content _ngcontent-c0=\"\" class=\"mat-drawer-content mat-sidenav-content\">...</mat-sidenav-content>\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538847453796,
+        "stop" : 1538847469918,
+        "duration" : 16122
+      }
+    }, {
+      "uid" : "ad21186da3ab8424",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538847304307,
+        "stop" : 1538847330800,
+        "duration" : 26493
+      }
+    }, {
+      "uid" : "14d66d39189d3b29",
+      "status" : "failed",
+      "statusDetails" : "Failed: unknown error: Element <span class=\"mat-button-wrapper\">...</span> is not clickable at point (1129, 728). Other element would receive the click: <mat-sidenav-content _ngcontent-c0=\"\" class=\"mat-drawer-content mat-sidenav-content\">...</mat-sidenav-content>\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538847205905,
+        "stop" : 1538847222405,
+        "duration" : 16500
+      }
+    }, {
+      "uid" : "2c8e25d76c77e3ec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538847143383,
+        "stop" : 1538847170062,
+        "duration" : 26679
+      }
+    }, {
+      "uid" : "8a6acc7885319553",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(css selector, *[id=\"createTrade\"])",
+      "time" : {
+        "start" : 1538847061312,
+        "stop" : 1538847066124,
+        "duration" : 4812
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a690004295506eaf.json",
+  "parameterValues" : [ ]
+}

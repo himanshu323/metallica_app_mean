@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1538846302793' stop='1538846314143'>
+    <name>Trade Search Test</name>
+    <title>Trade Search Test</title>
+    <test-cases>
+        <test-case start='1538846302918' status='passed' stop='1538846312661'>
+            <name>login to trade search</name>
+            <title>login to trade search</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='f42f1f2d-c75b-4e0a-8723-e0e0dd8e3ba9-attachment.png' type='image/png' size='41827'/>
+            </attachments>
+        </test-case>
+        <test-case start='1538846312661' status='pending' stop='1538846312661'>
+            <name>search the trade</name>
+            <title>search the trade</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1538846312662' status='pending' stop='1538846312662'>
+            <name>enter the details for trade create</name>
+            <title>enter the details for trade create</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1538846312662' status='passed' stop='1538846314142'>
+            <name>delete the trade</name>
+            <title>delete the trade</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='9b2fa0bd-1c46-4898-bc8b-2e38da57a2f3-attachment.png' type='image/png' size='243148'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

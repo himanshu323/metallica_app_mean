@@ -1,0 +1,63 @@
+{
+  "uid" : "e70252ba699e6259",
+  "name" : "enter the details for trade create",
+  "fullName" : "Trade Search Test.enter the details for trade create",
+  "historyId" : "32c5dc11fcc8a76c034ffd60831e3b3f",
+  "time" : {
+    "start" : 1538844904398,
+    "stop" : 1538844965152,
+    "duration" : 60754
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+  "statusTrace" : "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n                    at Timeout._onTimeout (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4281:23)\n                    at ontimeout (timers.js:424:11)\n                    at tryOnTimeout (timers.js:288:5)\n                    at listOnTimeout (timers.js:251:5)\n                    at Timer.processTimers (timers.js:211:10)",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+    "statusTrace" : "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n                    at Timeout._onTimeout (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4281:23)\n                    at ontimeout (timers.js:424:11)\n                    at tryOnTimeout (timers.js:288:5)\n                    at listOnTimeout (timers.js:251:5)\n                    at Timer.processTimers (timers.js:211:10)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ed50fad6548fa236",
+      "name" : "Screenshot",
+      "source" : "ed50fad6548fa236.png",
+      "type" : "image/png",
+      "size" : 249599
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "enter the details for trade create"
+  }, {
+    "name" : "package",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e70252ba699e6259.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,754 @@
+{
+  "uid" : "24b3bbb8a3784098",
+  "name" : "search the trade",
+  "fullName" : "Trade Search Test.search the trade",
+  "historyId" : "befc418a47413cbfeadb56fcc680ae2",
+  "time" : {
+    "start" : 1538847518886,
+    "stop" : 1538847518887,
+    "duration" : 1
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Temporarily disabled with xit",
+  "statusTrace" : "",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "search the trade"
+  }, {
+    "name" : "package",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "74e70870a99eef6d",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538847453795,
+        "stop" : 1538847453796,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f22c5065ed45e83e",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538847304307,
+        "stop" : 1538847304307,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7fa0f6a9c49c11d0",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538847205904,
+        "stop" : 1538847205904,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "87c3589b22fd1125",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538847143382,
+        "stop" : 1538847143382,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "388cf0833d0acd8c",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538847061311,
+        "stop" : 1538847061312,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d6b427a54e02a31d",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538846520768,
+        "stop" : 1538846520768,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2286a1ad08898a7b",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538846378632,
+        "stop" : 1538846378633,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5d054d05932df230",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538846312661,
+        "stop" : 1538846312661,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "65202c3319ca24dc",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538846230844,
+        "stop" : 1538846230846,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "64964b03e3aa1bf2",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538846189716,
+        "stop" : 1538846189717,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ea79d9a790defb1",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538846095218,
+        "stop" : 1538846095222,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "69a7e2571a25ba7b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538845894306,
+        "stop" : 1538845916592,
+        "duration" : 22286
+      }
+    }, {
+      "uid" : "1360ffa21d710c0b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538845546685,
+        "stop" : 1538845564961,
+        "duration" : 18276
+      }
+    }, {
+      "uid" : "d0f4fc029c9f139e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538845403929,
+        "stop" : 1538845422288,
+        "duration" : 18359
+      }
+    }, {
+      "uid" : "23d6aa26fa914cf1",
+      "status" : "failed",
+      "statusDetails" : "Failed: Table data validation failed",
+      "time" : {
+        "start" : 1538845185945,
+        "stop" : 1538845205425,
+        "duration" : 19480
+      }
+    }, {
+      "uid" : "2fa764b122f89289",
+      "status" : "failed",
+      "statusDetails" : "Failed: Table data validation failed",
+      "time" : {
+        "start" : 1538845066142,
+        "stop" : 1538845086376,
+        "duration" : 20234
+      }
+    }, {
+      "uid" : "98fe3cba7bbd4738",
+      "status" : "failed",
+      "statusDetails" : "Failed: Table data validation failed",
+      "time" : {
+        "start" : 1538844889975,
+        "stop" : 1538844904398,
+        "duration" : 14423
+      }
+    }, {
+      "uid" : "320cb96eafefe918",
+      "status" : "failed",
+      "statusDetails" : "Failed: Table data validation failed",
+      "time" : {
+        "start" : 1538844720231,
+        "stop" : 1538844734438,
+        "duration" : 14207
+      }
+    }, {
+      "uid" : "9053fe44e34cef32",
+      "status" : "failed",
+      "statusDetails" : "Failed: Table data validation failed",
+      "time" : {
+        "start" : 1538844523524,
+        "stop" : 1538844537808,
+        "duration" : 14284
+      }
+    }, {
+      "uid" : "e70b3f2f001aabbf",
+      "status" : "failed",
+      "statusDetails" : "Failed: Table data validation failed",
+      "time" : {
+        "start" : 1538844364815,
+        "stop" : 1538844378986,
+        "duration" : 14171
+      }
+    }, {
+      "uid" : "d997f529edbea0a8",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(xpath, //table[@id='tradeTable']/tobdy/tr[1]//td[contains(@class,'tradeDate')])",
+      "time" : {
+        "start" : 1538844262093,
+        "stop" : 1538844276446,
+        "duration" : 14353
+      }
+    }, {
+      "uid" : "3063e11f74325911",
+      "status" : "failed",
+      "statusDetails" : "Failed: Table data validation failed",
+      "time" : {
+        "start" : 1538843742302,
+        "stop" : 1538843756578,
+        "duration" : 14276
+      }
+    }, {
+      "uid" : "453a28cd0e435d79",
+      "status" : "failed",
+      "statusDetails" : "Failed: Table data validation failed",
+      "time" : {
+        "start" : 1538843562244,
+        "stop" : 1538843573058,
+        "duration" : 10814
+      }
+    }, {
+      "uid" : "25fd20e4b0458e87",
+      "status" : "failed",
+      "statusDetails" : "Failed: Table data validation failed",
+      "time" : {
+        "start" : 1538843393078,
+        "stop" : 1538843403626,
+        "duration" : 10548
+      }
+    }, {
+      "uid" : "60033470cfb1dd9c",
+      "status" : "failed",
+      "statusDetails" : "Failed: Table data validation failed",
+      "time" : {
+        "start" : 1538843266788,
+        "stop" : 1538843277363,
+        "duration" : 10575
+      }
+    }, {
+      "uid" : "b63977fa845118af",
+      "status" : "failed",
+      "statusDetails" : "Failed: commodity.trim is not a function",
+      "time" : {
+        "start" : 1538843206362,
+        "stop" : 1538843217097,
+        "duration" : 10735
+      }
+    }, {
+      "uid" : "9d01ad18c61a552c",
+      "status" : "failed",
+      "statusDetails" : "Failed: commodity.trim is not a function",
+      "time" : {
+        "start" : 1538843106196,
+        "stop" : 1538843112663,
+        "duration" : 6467
+      }
+    }, {
+      "uid" : "97eaab2888d56b9f",
+      "status" : "failed",
+      "statusDetails" : "Failed: commodity.trim is not a function",
+      "time" : {
+        "start" : 1538842925058,
+        "stop" : 1538842931740,
+        "duration" : 6682
+      }
+    }, {
+      "uid" : "583766e9600081b6",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538829953922,
+        "stop" : 1538829953922,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c9d40d221fb750c9",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538829901483,
+        "stop" : 1538829901484,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "942ae299fe529e7b",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538829762733,
+        "stop" : 1538829762734,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e6456fc5e5d9896f",
+      "status" : "skipped",
+      "statusDetails" : "Temporarily disabled with xit",
+      "time" : {
+        "start" : 1538829601462,
+        "stop" : 1538829601463,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1e0a7083f73c2d5b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829518138,
+        "stop" : 1538829528189,
+        "duration" : 10051
+      }
+    }, {
+      "uid" : "a3837fddd02fd703",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829466479,
+        "stop" : 1538829476239,
+        "duration" : 9760
+      }
+    }, {
+      "uid" : "f5b2ac9e1aff8afc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829379996,
+        "stop" : 1538829389806,
+        "duration" : 9810
+      }
+    }, {
+      "uid" : "717179540be464a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829210274,
+        "stop" : 1538829220298,
+        "duration" : 10024
+      }
+    }, {
+      "uid" : "87ed6bb14303a6b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538829123072,
+        "stop" : 1538829133829,
+        "duration" : 10757
+      }
+    }, {
+      "uid" : "1010fc03b03635ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538828967304,
+        "stop" : 1538828979405,
+        "duration" : 12101
+      }
+    }, {
+      "uid" : "d28120bcc6685c16",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538828747420,
+        "stop" : 1538828756391,
+        "duration" : 8971
+      }
+    }, {
+      "uid" : "6ceca1cfa6222f93",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538828630663,
+        "stop" : 1538828636621,
+        "duration" : 5958
+      }
+    }, {
+      "uid" : "b1aee6642bc5c88e",
+      "status" : "failed",
+      "statusDetails" : "Failed: Cannot read property 'commoditySelect' of undefined",
+      "time" : {
+        "start" : 1538826971305,
+        "stop" : 1538826972819,
+        "duration" : 1514
+      }
+    }, {
+      "uid" : "568ebf232cdaf2d1",
+      "status" : "failed",
+      "statusDetails" : "Failed: Cannot read property 'click' of undefined",
+      "time" : {
+        "start" : 1538826925009,
+        "stop" : 1538826926091,
+        "duration" : 1082
+      }
+    }, {
+      "uid" : "f08282ae4158d738",
+      "status" : "failed",
+      "statusDetails" : "Failed: Cannot read property 'click' of undefined",
+      "time" : {
+        "start" : 1538826820050,
+        "stop" : 1538826821889,
+        "duration" : 1839
+      }
+    }, {
+      "uid" : "65881e77c64a8cc7",
+      "status" : "failed",
+      "statusDetails" : "Failed: Cannot read property 'commoditySelect' of undefined",
+      "time" : {
+        "start" : 1538826783532,
+        "stop" : 1538826785659,
+        "duration" : 2127
+      }
+    }, {
+      "uid" : "f1aa18142ea12181",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538826701633,
+        "stop" : 1538826704357,
+        "duration" : 2724
+      }
+    }, {
+      "uid" : "ee26cc99f77e6ef1",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(xpath, //span[@class='mat-option-text'][contains(text(),'[object Object]')])",
+      "time" : {
+        "start" : 1538826625378,
+        "stop" : 1538826627846,
+        "duration" : 2468
+      }
+    }, {
+      "uid" : "1f1b833a8f449378",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(xpath, //span[@class='mat-option-text'][contains(text(),'[object Object]')])",
+      "time" : {
+        "start" : 1538826519366,
+        "stop" : 1538826528381,
+        "duration" : 9015
+      }
+    }, {
+      "uid" : "f09cb1513d0c4340",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(xpath, //form[text()='searchForm'])",
+      "time" : {
+        "start" : 1538826336649,
+        "stop" : 1538826337422,
+        "duration" : 773
+      }
+    }, {
+      "uid" : "6902ebf38322fdb7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538825596983,
+        "stop" : 1538825597374,
+        "duration" : 391
+      }
+    }, {
+      "uid" : "84602b4b974d1c4e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538825270890,
+        "stop" : 1538825271321,
+        "duration" : 431
+      }
+    }, {
+      "uid" : "611a893be0526d9d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538825151990,
+        "stop" : 1538825153227,
+        "duration" : 1237
+      }
+    }, {
+      "uid" : "885f40088e0112ab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538825016228,
+        "stop" : 1538825017296,
+        "duration" : 1068
+      }
+    }, {
+      "uid" : "bbba8f6f9886aadd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538824845548,
+        "stop" : 1538824846127,
+        "duration" : 579
+      }
+    }, {
+      "uid" : "2fc522eac4fea7a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538824549266,
+        "stop" : 1538824549678,
+        "duration" : 412
+      }
+    }, {
+      "uid" : "f35dd4c953215cfb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538811899267,
+        "stop" : 1538811899651,
+        "duration" : 384
+      }
+    }, {
+      "uid" : "c87662ebb000fc27",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538811516108,
+        "stop" : 1538811516506,
+        "duration" : 398
+      }
+    }, {
+      "uid" : "ef442f0f3fdb0c11",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538811381865,
+        "stop" : 1538811382231,
+        "duration" : 366
+      }
+    }, {
+      "uid" : "b16d73f378953d09",
+      "status" : "passed",
+      "time" : {
+        "start" : 1538811202050,
+        "stop" : 1538811202520,
+        "duration" : 470
+      }
+    }, {
+      "uid" : "cf5194123c8066a8",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538811128960,
+        "stop" : 1538811148710,
+        "duration" : 19750
+      }
+    }, {
+      "uid" : "4b46ad8b0d05236d",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538810858288,
+        "stop" : 1538810876763,
+        "duration" : 18475
+      }
+    }, {
+      "uid" : "55bd2ab3ad53606b",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538810776854,
+        "stop" : 1538810795838,
+        "duration" : 18984
+      }
+    }, {
+      "uid" : "f531b9a2867152a8",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(xpath, //form[@id='searchForm']//mat-select[@name='commodity'])",
+      "time" : {
+        "start" : 1538810657794,
+        "stop" : 1538810665614,
+        "duration" : 7820
+      }
+    }, {
+      "uid" : "83cb9d0911d4ad3c",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(xpath, //form[@id='searchForm']//mat-select[@name='commodity'])",
+      "time" : {
+        "start" : 1538810580227,
+        "stop" : 1538810588338,
+        "duration" : 8111
+      }
+    }, {
+      "uid" : "cc096e126828cf2e",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538810479763,
+        "stop" : 1538810499019,
+        "duration" : 19256
+      }
+    }, {
+      "uid" : "f172500e5d6b49ff",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538810422553,
+        "stop" : 1538810443471,
+        "duration" : 20918
+      }
+    }, {
+      "uid" : "ff04c5405ed35ec",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(xpath, //form[@id='searchForm']//mat-select[@name='commodity'])",
+      "time" : {
+        "start" : 1538810286498,
+        "stop" : 1538810294165,
+        "duration" : 7667
+      }
+    }, {
+      "uid" : "de4509662f0e59c8",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538810183974,
+        "stop" : 1538810204806,
+        "duration" : 20832
+      }
+    }, {
+      "uid" : "e266c0311c98ed44",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538810049725,
+        "stop" : 1538810068724,
+        "duration" : 18999
+      }
+    }, {
+      "uid" : "5eb0d8d28136aabb",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538809966130,
+        "stop" : 1538809984645,
+        "duration" : 18515
+      }
+    }, {
+      "uid" : "96f8c3c2684cce3",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(xpath, //form[@id='searchForm']//mat-select[@name='commodity'])",
+      "time" : {
+        "start" : 1538809914416,
+        "stop" : 1538809922257,
+        "duration" : 7841
+      }
+    }, {
+      "uid" : "d4c8089c0a475a1",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538809820829,
+        "stop" : 1538809839802,
+        "duration" : 18973
+      }
+    }, {
+      "uid" : "62f291d3c6fbfaf9",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538809686386,
+        "stop" : 1538809705768,
+        "duration" : 19382
+      }
+    }, {
+      "uid" : "32c57c70222a1811",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538809593382,
+        "stop" : 1538809605781,
+        "duration" : 12399
+      }
+    }, {
+      "uid" : "ef87a9946f25de0f",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538809482429,
+        "stop" : 1538809495723,
+        "duration" : 13294
+      }
+    }, {
+      "uid" : "4396a77cefc7237e",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538809431198,
+        "stop" : 1538809443539,
+        "duration" : 12341
+      }
+    }, {
+      "uid" : "f3f017fcc7c034e2",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538809233319,
+        "stop" : 1538809245739,
+        "duration" : 12420
+      }
+    }, {
+      "uid" : "aa50a4490e26e114",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538809109316,
+        "stop" : 1538809121747,
+        "duration" : 12431
+      }
+    }, {
+      "uid" : "25b434f11bf95483",
+      "status" : "failed",
+      "statusDetails" : "Failed: script timeout: result was not received in 11 seconds\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1538808936946,
+        "stop" : 1538808949865,
+        "duration" : 12919
+      }
+    }, {
+      "uid" : "d859eeb7c78f19d1",
+      "status" : "failed",
+      "statusDetails" : "Failed: Cannot read property 'fromDate' of undefined",
+      "time" : {
+        "start" : 1538808832627,
+        "stop" : 1538808833432,
+        "duration" : 805
+      }
+    }, {
+      "uid" : "ebe49901bf73afaa",
+      "status" : "failed",
+      "statusDetails" : "Failed: Cannot read property 'sendKeys' of undefined",
+      "time" : {
+        "start" : 1538808753233,
+        "stop" : 1538808753834,
+        "duration" : 601
+      }
+    }, {
+      "uid" : "d51a8746a036cb93",
+      "status" : "failed",
+      "statusDetails" : "Failed: Cannot read property 'fromDate' of undefined",
+      "time" : {
+        "start" : 1538808705447,
+        "stop" : 1538808706331,
+        "duration" : 884
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "24b3bbb8a3784098.json",
+  "parameterValues" : [ ]
+}

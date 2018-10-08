@@ -1,0 +1,118 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1538842915850' stop='1538842944619'>
+    <name>Trade Search Test</name>
+    <title>Trade Search Test</title>
+    <test-cases>
+        <test-case start='1538842915965' status='passed' stop='1538842925058'>
+            <name>login to trade search</name>
+            <title>login to trade search</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='a0429a4b-aa6e-4326-9931-aaf46a973417-attachment.png' type='image/png' size='41872'/>
+            </attachments>
+        </test-case>
+        <test-case start='1538842925058' status='failed' stop='1538842931740'>
+            <name>search the trade</name>
+            <title>search the trade</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='9cc9f466-d674-4b63-b5cf-fe9b0ddffc11-attachment.png' type='image/png' size='144639'/>
+            </attachments>
+            <failure>
+                <message>Failed: commodity.trim is not a function</message>
+                <stack-trace>TypeError: commodity.trim is not a function
+                    at TradeGrid.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/pages/tradeGrid.ts:147:32)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/pages/tradeGrid.js:4:58)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)
+                From: Task: Run it("search the trade") in control flow
+                    at UserContext.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at QueueRunner.execute (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)
+                    at Spec.queueRunnerFactory (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)
+                    at Spec.execute (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)
+                    at UserContext.fn (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)
+                    at attempt (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                From asynchronous test: 
+                Error
+                    at Object.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.ts:42:5)
+                    at Generator.next (&lt;anonymous>)
+                    at /Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.js:7:71
+                    at new Promise (&lt;anonymous>)
+                    at __awaiter (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.js:3:12)
+                    at Suite.describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.ts:17:39)
+                    at addSpecsToSuite (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1538842931740' status='failed' stop='1538842944619'>
+            <name>enter the details for trade create</name>
+            <title>enter the details for trade create</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='06625806-e140-4a97-a9a9-4664ae037950-attachment.png' type='image/png' size='189052'/>
+            </attachments>
+            <failure>
+                <message>Failed: unknown error: Element &lt;span class="mat-button-wrapper">...&lt;/span> is not clickable at point (1129, 728). Other element would receive the click: &lt;mat-sidenav-content _ngcontent-c0="" class="mat-drawer-content mat-sidenav-content">...&lt;/mat-sidenav-content>
+                  (Session info: chrome=69.0.3497.100)
+                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)</message>
+                <stack-trace>WebDriverError: unknown error: Element &lt;span class="mat-button-wrapper">...&lt;/span> is not clickable at point (1129, 728). Other element would receive the click: &lt;mat-sidenav-content _ngcontent-c0="" class="mat-drawer-content mat-sidenav-content">...&lt;/mat-sidenav-content>
+                  (Session info: chrome=69.0.3497.100)
+                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)
+                    at Object.checkLegacyResponse (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/error.js:546:15)
+                    at parseHttpResponse (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/http.js:509:13)
+                    at doSend.then.response (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/http.js:441:30)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)
+                From: Task: WebElement.click()
+                    at Driver.schedule (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+                    at WebElement.schedule_ (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/webdriver.js:2010:25)
+                    at WebElement.click (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/webdriver.js:2092:17)
+                    at actionFn (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/built/element.js:89:44)
+                    at Array.map (&lt;anonymous>)
+                    at actionResults.getWebElements.then (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/built/element.js:461:65)
+                    at ManagedPromise.invokeCallback_ (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at asyncRun (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27)Error
+                    at ElementArrayFinder.applyAction_ (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as click] (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as click] (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/built/element.js:831:22)
+                    at TradeCreate.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/pages/tradeCreate.ts:161:33)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/pages/tradeCreate.js:4:58)
+                From: Task: Run it("enter the details for trade create") in control flow
+                    at UserContext.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at QueueRunner.execute (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)
+                    at Spec.queueRunnerFactory (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)
+                    at Spec.execute (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)
+                    at UserContext.fn (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)
+                    at attempt (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                From asynchronous test: 
+                Error
+                    at Object.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.ts:69:5)
+                    at Generator.next (&lt;anonymous>)
+                    at /Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.js:7:71
+                    at new Promise (&lt;anonymous>)
+                    at __awaiter (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.js:3:12)
+                    at Suite.describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.ts:17:39)
+                    at addSpecsToSuite (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,57 @@
+
+{
+	"testData": {
+		"basePage": { 
+			"url": "http://localhost:4201"
+		},
+		"tradeSearch": {
+            "tradeFromDate":"10/01/2018",
+            "tradeToDate":"10/10/2018",
+            "commodity":"Aluminium",
+            "side":"buy",
+            "counterparty":"Loreum",
+            "location":"India"
+        },
+
+        "tradeGrid": {
+            "tradeFromDate":"01/10/2018",
+            "tradeToDate":"10/10/2018",
+            "commodity":"Al",
+            "side":"Buy",
+            "counterparty":"Loreum",
+            "location":"India"
+        },
+
+        "tradeCreate": {
+            "tradeDate":"10/1/2018",
+            "commodity":"Aluminium",
+            "side":"buy",
+            "counterparty":"Loreum",
+            "location":"India",
+            "price":500,
+            "quantity":1000
+        },
+
+        "tradeDelete":{
+            "tradeId":""
+        },
+
+        "tradeEdit":{
+            "tradeId":""
+        },
+        "tradeUpdate": {
+            "tradeDate":"10/1/2018",
+            "commodity":"Aluminium",
+            "side":"sell",
+            "counterparty":"Ipsum",
+            "location":"India",
+            "price":500,
+            "quantity":1000
+        }
+        ,
+        "login":{
+            "email":"test@test.com",
+            "password":"test1234"
+        }
+	}
+}

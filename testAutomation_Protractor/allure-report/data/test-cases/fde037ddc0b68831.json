@@ -1,0 +1,45 @@
+{
+  "uid" : "fde037ddc0b68831",
+  "name" : "delete the trade",
+  "fullName" : "Trade Search Test.delete the trade",
+  "historyId" : "7097fd1c77779e224f8321833b0854cd",
+  "time" : {
+    "start" : 1538847453796,
+    "stop" : 1538847453796,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Temporarily disabled with xit",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "delete the trade"
+  }, {
+    "name" : "package",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fde037ddc0b68831.json",
+  "parameterValues" : [ ]
+}

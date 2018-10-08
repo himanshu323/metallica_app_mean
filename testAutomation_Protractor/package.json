@@ -1,0 +1,64 @@
+{
+  "name": "EACourseApp",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run tsc:w\" \"npm run server\" ",
+    "server": "node node_modules/ng2f-server/server.js",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "webdriver-update": "./node_modules/.bin/webdriver-manager update",
+    "test": "./node_modules/.bin/protractor ./conf.js ||  node ReturnTrue.js",
+    "posttest": "allure generate allure-results --clean -o allure-report || true"
+  },
+  "keywords": [],
+  "author": "",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/angular/angular.io/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "@angular/common": "~2.2.0",
+    "@angular/compiler": "~2.2.0",
+    "@angular/core": "~2.2.0",
+    "@angular/forms": "~2.2.0",
+    "@angular/http": "~2.2.0",
+    "@angular/platform-browser": "~2.2.0",
+    "@angular/platform-browser-dynamic": "~2.2.0",
+    "@angular/router": "~3.2.0",
+    "@angular/upgrade": "~2.2.0",
+    "core-js": "~2.4.1",
+    "moment": "^2.22.2",
+    "ng2f-bootstrap": "~0.0.4",
+    "ng2f-server": "~0.2.3",
+    "reflect-metadata": "~0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.40",
+    "tostr": "^0.1.0",
+    "zone.js": "~0.6.26"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/core-js": "~0.9.34",
+    "@types/cucumber": "^4.0.1",
+    "@types/jasmine": "^2.5.43",
+    "@types/node": "~6.0.46",
+    "allure-commandline": "~2.5.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "concurrently": "^2.2.0",
+    "cucumber": "^4.0.0",
+    "cucumber-html-reporter": "^4.0.1",
+    "jasmine": "^3.0.0",
+    "jasmine-allure-reporter": "~1.0.2",
+    "jasminewd2": "^2.2.0",
+    "protractor": "^5.3.0",
+    "protractor-cucumber-framework": "^4.2.0",
+    "ts-node": "^5.0.0",
+    "ts-xlsx": "0.0.11",
+    "typescript": "^2.0.10",
+    "winston": "^2.4.0"
+  },
+  "repository": {}
+}

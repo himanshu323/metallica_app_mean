@@ -1,0 +1,25 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Expected true to be false.",
+      "children" : [ {
+        "name" : "Open Account",
+        "uid" : "68f4b598cc045c2a",
+        "parentUid" : "293aa7b91ef44dcd8cc1f32bddfcf900",
+        "status" : "failed",
+        "time" : {
+          "start" : 1524118252102,
+          "stop" : 1524118254117,
+          "duration" : 2015
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "293aa7b91ef44dcd8cc1f32bddfcf900"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

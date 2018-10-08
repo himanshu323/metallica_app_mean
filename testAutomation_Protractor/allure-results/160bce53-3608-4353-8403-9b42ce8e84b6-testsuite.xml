@@ -1,0 +1,85 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1538828736987' stop='1538828757422'>
+    <name>Trade Search Test</name>
+    <title>Trade Search Test</title>
+    <test-cases>
+        <test-case start='1538828736989' status='passed' stop='1538828747420'>
+            <name>login to trade search</name>
+            <title>login to trade search</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='b9eaa3d0-f468-447d-bb96-e65a44434e12-attachment.png' type='image/png' size='41666'/>
+            </attachments>
+        </test-case>
+        <test-case start='1538828747420' status='passed' stop='1538828756391'>
+            <name>search the trade</name>
+            <title>search the trade</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='73c13d12-f800-4e2a-9ffc-187de4eb8bbe-attachment.png' type='image/png' size='87448'/>
+            </attachments>
+        </test-case>
+        <test-case start='1538828756391' status='failed' stop='1538828757421'>
+            <name>enter the details for trade create</name>
+            <title>enter the details for trade create</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='1eef2e00-b5e0-4591-8ce1-b000b3f7b65e-attachment.png' type='image/png' size='130447'/>
+            </attachments>
+            <failure>
+                <message>Failed: each key must be a number of string; got undefined</message>
+                <stack-trace>TypeError: each key must be a number of string; got undefined
+                    at keys.forEach.key (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/webdriver.js:2162:21)
+                    at Array.forEach (&lt;anonymous>)
+                    at Promise.all.then.keys (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/webdriver.js:2157:16)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)
+                From: Task: WebElement.sendKeys()
+                    at Driver.schedule (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+                    at WebElement.schedule_ (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/webdriver.js:2010:25)
+                    at WebElement.sendKeys (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/webdriver.js:2174:19)
+                    at actionFn (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/built/element.js:89:44)
+                    at Array.map (&lt;anonymous>)
+                    at actionResults.getWebElements.then (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/built/element.js:461:65)
+                    at ManagedPromise.invokeCallback_ (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at asyncRun (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27)Error
+                    at ElementArrayFinder.applyAction_ (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as sendKeys] (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as sendKeys] (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/built/element.js:831:22)
+                    at TradeCreate.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/pages/tradeCreate.ts:130:30)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/pages/tradeCreate.js:4:58)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)
+                From: Task: Run it("enter the details for trade create") in control flow
+                    at UserContext.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at QueueRunner.execute (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)
+                    at Spec.queueRunnerFactory (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)
+                    at Spec.execute (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)
+                    at UserContext.fn (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)
+                    at attempt (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                From asynchronous test: 
+                Error
+                    at Object.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.ts:57:5)
+                    at Generator.next (&lt;anonymous>)
+                    at /Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.js:7:71
+                    at new Promise (&lt;anonymous>)
+                    at __awaiter (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.js:3:12)
+                    at Suite.describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.ts:14:39)
+                    at addSpecsToSuite (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,61 @@
+{
+  "uid" : "3f426a3f4d16ebb7",
+  "name" : "Search Customer Details",
+  "fullName" : "Testing the Bank Manager E2E.Search Customer Details",
+  "historyId" : "723b0668020be828adc8f1e2613117e8",
+  "time" : {
+    "start" : 1524118254117,
+    "stop" : 1524118254872,
+    "duration" : 755
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d52943198a26bf98",
+      "name" : "Screenshot",
+      "source" : "d52943198a26bf98.png",
+      "type" : "image/png",
+      "size" : 17159
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Testing the Bank Manager E2E"
+  }, {
+    "name" : "testClass",
+    "value" : "Testing the Bank Manager E2E"
+  }, {
+    "name" : "testMethod",
+    "value" : "Search Customer Details"
+  }, {
+    "name" : "package",
+    "value" : "Testing the Bank Manager E2E"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3f426a3f4d16ebb7.json",
+  "parameterValues" : [ ]
+}

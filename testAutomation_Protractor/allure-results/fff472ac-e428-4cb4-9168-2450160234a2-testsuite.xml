@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1538808822870' stop='1538808833433'>
+    <name>Trade Search Test</name>
+    <title>Trade Search Test</title>
+    <test-cases>
+        <test-case start='1538808822870' status='passed' stop='1538808832627'>
+            <name>login to trade search</name>
+            <title>login to trade search</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='05feb6f6-c1a7-4535-9831-f15c1361c1da-attachment.png' type='image/png' size='36140'/>
+            </attachments>
+        </test-case>
+        <test-case start='1538808832627' status='failed' stop='1538808833432'>
+            <name>search the trade</name>
+            <title>search the trade</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='eb5b8c19-3b4f-463f-9f9b-8419540977b1-attachment.png' type='image/png' size='130776'/>
+            </attachments>
+            <failure>
+                <message>Failed: Cannot read property 'fromDate' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'fromDate' of undefined
+                    at TradeSearch.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/pages/tradeSearch.ts:133:72)
+                    at Generator.next (&lt;anonymous>)
+                    at /Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/pages/tradeSearch.js:7:71
+                    at new Promise (&lt;anonymous>)
+                    at __awaiter (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/pages/tradeSearch.js:3:12)
+                    at TradeSearch.enterTradeSearchDetails (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/pages/tradeSearch.js:65:16)
+                    at Object.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.ts:30:27)
+                    at Generator.next (&lt;anonymous>)
+                    at /Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.js:7:71
+                    at new Promise (&lt;anonymous>)
+                From: Task: Run it("search the trade") in control flow
+                    at UserContext.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at QueueRunner.execute (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)
+                    at Spec.queueRunnerFactory (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)
+                    at Spec.execute (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)
+                    at UserContext.fn (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)
+                    at attempt (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                From asynchronous test: 
+                Error
+                    at Object.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.ts:25:5)
+                    at Generator.next (&lt;anonymous>)
+                    at /Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.js:7:71
+                    at new Promise (&lt;anonymous>)
+                    at __awaiter (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.js:3:12)
+                    at Suite.describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/TestApp/specs/tradeSearchTest.ts:11:39)
+                    at addSpecsToSuite (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/himanshuarora/WebDevelopment/_vv/met323-app/GUITests_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

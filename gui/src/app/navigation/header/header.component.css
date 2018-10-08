@@ -1,0 +1,23 @@
+ul{
+    list-style: none;
+    
+   text-decoration: none
+}
+
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+    height: 100%;
+  }
+
+  .navigation-items{
+
+    padding-left: 6px;
+  }
+
+a:hover{
+    color:pink
+}
+
+
+.selected{
+    color:lightpink
+}

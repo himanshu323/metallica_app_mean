@@ -1,0 +1,45 @@
+{
+  "uid" : "23efad93acadce67",
+  "name" : "enter the details for trade create",
+  "fullName" : "Trade Search Test.enter the details for trade create",
+  "historyId" : "32c5dc11fcc8a76c034ffd60831e3b3f",
+  "time" : {
+    "start" : 1538846520769,
+    "stop" : 1538846520769,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Temporarily disabled with xit",
+  "statusTrace" : "",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "enter the details for trade create"
+  }, {
+    "name" : "package",
+    "value" : "Trade Search Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "23efad93acadce67.json",
+  "parameterValues" : [ ]
+}

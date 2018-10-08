@@ -1,0 +1,123 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Test the homepage",
+    "line": 1,
+    "id": "test-the-homepage",
+    "tags": [],
+    "uri": "Test\\features\\homepage.feature",
+    "elements": [
+      {
+        "id": "test-the-homepage;verify-course-details",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify Course Details",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "2\\Protractor_latest\\Protractor_latest\\EACourseApp\\node_modules\\cucumber\\src\\support_code_library_builder\\define_helpers.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3323000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Get all the headings",
+            "match": {
+              "location": "2\\Protractor_latest\\Protractor_latest\\EACourseApp\\node_modules\\cucumber\\src\\support_code_library_builder\\define_helpers.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 206000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Click on 'Selenium Framework Course' course",
+            "match": {
+              "location": "2\\Protractor_latest\\Protractor_latest\\EACourseApp\\node_modules\\cucumber\\src\\support_code_library_builder\\define_helpers.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 224000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Shoud see 'Selenium Framework Course' under Course Details Page",
+            "match": {
+              "location": "2\\Protractor_latest\\Protractor_latest\\EACourseApp\\node_modules\\cucumber\\src\\support_code_library_builder\\define_helpers.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Courses",
+                      "Duration"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test1",
+                      "2"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "ABC",
+                      "4"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Read all the courses from table",
+            "match": {
+              "location": "2\\Protractor_latest\\Protractor_latest\\EACourseApp\\node_modules\\cucumber\\src\\support_code_library_builder\\define_helpers.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "2\\Protractor_latest\\Protractor_latest\\EACourseApp\\node_modules\\cucumber\\src\\support_code_library_builder\\define_helpers.js:90"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+<mat-toolbar color="primary">
+
+
+    <button (click)="onToggle()" mat-icon-button >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <p>Trading App</p>
+
+    <ul fxFlex fxLayout fxLayoutAlign="end center" fxLayoutGap="15px" fxHide.xs>
+
+
+        <li *ngIf="!userIsAuthenticated">
+            <a mat-button routerLinkActive="mat-accent" routerLink="/auth/signUp">Register</a>
+        </li>
+
+        <li  *ngIf="!userIsAuthenticated">
+            <a mat-button routerLinkActive="mat-accent" routerLink="/auth/login">Login</a>
+        </li>
+
+        
+
+      <li>
+
+        <a mat-button routerLink="/trades" routerLinkActive="selected" *ngIf="userIsAuthenticated">Trades</a>
+      </li>
+
+
+      <li>
+
+        <a mat-button *ngIf="userIsAuthenticated">Transfers</a>
+      </li>
+
+
+      <li>
+
+        <a mat-button *ngIf="userIsAuthenticated">Transports</a>
+      </li>
+
+       <li>
+        <button mat-button (click)="onLogout()"*ngIf="userIsAuthenticated" >Logout</button>
+        
+    </li>
+    </ul>
+
+   
+
+
+
+  </mat-toolbar>
+
+

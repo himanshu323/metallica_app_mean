@@ -1,0 +1,45 @@
+{
+  "uid" : "6cefe2c763143ec4",
+  "name" : "Logging to Bank Manager",
+  "fullName" : "Testing the Bank Manager E2E.Logging to Bank Manager",
+  "historyId" : "f6dd29d4c3db3ad2190ee03557d8f5de",
+  "time" : {
+    "start" : 1524118231317,
+    "stop" : 1524118238047,
+    "duration" : 6730
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Testing the Bank Manager E2E"
+  }, {
+    "name" : "testClass",
+    "value" : "Testing the Bank Manager E2E"
+  }, {
+    "name" : "testMethod",
+    "value" : "Logging to Bank Manager"
+  }, {
+    "name" : "package",
+    "value" : "Testing the Bank Manager E2E"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6cefe2c763143ec4.json",
+  "parameterValues" : [ ]
+}
