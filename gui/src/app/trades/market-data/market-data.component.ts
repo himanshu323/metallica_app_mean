@@ -8,7 +8,7 @@ import { MarketDataService } from 'src/app/market-data.service';
 })
 export class MarketDataComponent implements OnInit {
 
-  private marketStatus;
+   marketStatus;
 
   constructor(private marketDataService:MarketDataService) { }
 
