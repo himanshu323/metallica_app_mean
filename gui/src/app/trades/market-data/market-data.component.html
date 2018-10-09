@@ -1,0 +1,13 @@
+<mat-toolbar>
+  <!-- <span *ngFor="let market of marketStatus"> {{market.account }}</span> -->
+
+  <ul *ngFor="let market of marketStatus" fxLayout fxLayoutAlign="center center" fxLayoutGap="12px">
+
+    <li >{{market.account}}</li>
+    <li>{{market.price}}</li>
+    <li [ngClass]="{'positive':market.diff.indexOf('+')>=0,
+      'negative':market.diff.indexOf('-')>=0
+    
+    }" >{{market.diff}}</li>
+  </ul>
+</mat-toolbar>

@@ -1,4 +1,5 @@
 const app = require('express')();
+let config = require("./config/config");
 const http = require('http').Server(app);
 const market = require('./market');
 const io = require('socket.io')(http);
@@ -24,7 +25,8 @@ app.get('/api/market', (req, res) => {
 
 setInterval(function () {
     market.updateMarket();
-    io.sockets.emit('market', market.marketPositions[0]);
+    console.log(market.marketPositions);
+    io.sockets.emit('market', market.marketPositions);
 }, 5000);
 
 

@@ -1,0 +1,27 @@
+
+*{
+font-size: 10px;
+/* margin: 0%;
+padding: 0% */
+}
+mat-toolbar{
+
+    height: 10%;
+}
+
+ul{
+    list-style: none;
+    line-height: 1em;
+    
+}
+/* li{
+    color:red;
+} */
+.positive{
+    color: green
+}
+
+.negative{
+    color:red;
+}
+

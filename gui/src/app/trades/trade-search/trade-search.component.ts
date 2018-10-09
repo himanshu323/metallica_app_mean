@@ -14,9 +14,12 @@ export class TradeSearchComponent implements OnInit {
   clearFlag:boolean;
 
   commodities = [
-    { value: 'al', viewValue: 'Aluminium' },
+    { value: 'aluminium', viewValue: 'Aluminium' },
     { value: 'iron', viewValue: 'Iron' },
-    { value: 'copper', viewValue: 'Copper' }
+    { value: 'copper', viewValue: 'Copper' },
+    { value: 'zinc', viewValue: 'Zinc' },
+    { value: 'gold', viewValue: 'Gold' },
+    { value: 'silver', viewValue: 'Silver' }
   ];
 
   sides = [
@@ -27,12 +30,16 @@ export class TradeSearchComponent implements OnInit {
 
   counterParties = [
     { value: 'Loreum', viewValue: 'Loreum' },
-    { value: 'Ipsum', viewValue: 'Ipsum' }
+    { value: 'Ipsum', viewValue: 'Ipsum' },
+    { value: 'Dolor', viewValue: 'Dolor' },
+    { value: 'Amet', viewValue: 'Amet' }
   ];
 
   locations = [
-    { value: 'BA', viewValue: 'BA' },
-    { value: 'India', viewValue: 'India' }
+    { value: 'London', viewValue: 'London' },
+    { value: 'New York', viewValue: 'New York' },
+    { value: 'Singapore', viewValue: 'Singapore' },
+    { value: 'Denver', viewValue: 'Denver' }
   ];
   constructor(private tradeService:TradeService) { }
 

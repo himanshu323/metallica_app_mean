@@ -4,7 +4,7 @@ import { SocketService } from "../socket.service";
 import { TradeService } from "../trade.service";
 import { Router } from "@angular/router";
 import { MarketPrice } from "src/app/market-price.model";
-import { MarketStatusService } from "src/app/market-status.service";
+import { MarketDataService } from "src/app/market-data.service";
 
 @Component({
     selector:'app-trade',
@@ -13,30 +13,15 @@ import { MarketStatusService } from "src/app/market-status.service";
 })
 export class TradeComponent implements OnInit{
 
-    marketStatus: MarketPrice[];
-    marketStatusToPlot: MarketPrice[];
-
-    set MarketStatus(status: MarketPrice[]) {
-        this.marketStatus = status;
-        this.marketStatusToPlot = this.marketStatus.slice(0, 20);
-    }
-        
-    
-    constructor(private socketService: SocketService, private marketStatusSvc: MarketStatusService){
+   
+    constructor(private socketService: SocketService,private marketDataService:MarketDataService){
 }
 ngOnInit(): void {
 
 
     this.socketService.initializeSocket();
-    this.marketStatusSvc.getInitialMarketStatus()
-        .subscribe(prices => {
-            this.MarketStatus = prices;
 
-            let marketUpdateObservable = this.marketStatusSvc.getUpdates().subscribe((latestStatus: MarketPrice) => {  // 2
-                this.MarketStatus = [latestStatus].concat(this.marketStatus);  // 3
-            });  
-        });
-
+    this.marketDataService.initializeMarketDataSocket()
 
     
 }

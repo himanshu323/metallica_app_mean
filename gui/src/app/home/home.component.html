@@ -12,8 +12,10 @@
         <!-- <mat-card-subtitle>Subtitle</mat-card-subtitle> -->
     </mat-card-header>
     <img matCardImage src="https://financialtribune.com/sites/default/files/field/image/06_Aman.jpg">
-    <mat-card-content>
-        Please Register or Login to Continue
+    <mat-card-content >
+      <span *ngIf="!userIsAuthenticated">Please Register or Login to Continue</span>  
+
+    <span *ngIf="userIsAuthenticated">User is successfully logged in</span>
     </mat-card-content>
     <!-- <mat-card-actions align="start">
         <button mat-button (click)="onAction1">Action1</button>

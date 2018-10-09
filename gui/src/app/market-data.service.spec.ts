@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MarketStatusService } from './market-status.service';
+import { MarketDataService } from './market-data.service';
 
-describe('MarketStatusService', () => {
+describe('MarketDataService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: MarketStatusService = TestBed.get(MarketStatusService);
+    const service: MarketDataService = TestBed.get(MarketDataService);
     expect(service).toBeTruthy();
   });
 });

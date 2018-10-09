@@ -1,7 +1,7 @@
 export interface MarketPrice{
 
-    open: number;
-    close: number;
-    date: string | Date;
+    account: string;
+    price: Number;
+    diff: string;
 
 }

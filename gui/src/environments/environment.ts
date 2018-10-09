@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   apiUrl:"http://localhost:3000/",
-  notifyService:"http://localhost:3003/"
+  notifyService:"http://localhost:3003/",
+  marketDataService: "http://localhost:3004/"
 };
 
 /*
