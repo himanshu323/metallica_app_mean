@@ -37,6 +37,8 @@ const tradeProxy=httpProxy(process.env.TRADE_SERVICE);
 
 const notifyProxy=httpProxy(process.env.NOTIFY_SERVICE);
 
+const marketDataProxy=httpProxy(process.env.MARKETDATA_SERVICE);
+
 
 app.all(["/api/:service","/api/:service/**"], (req, resp, next) => {
   
@@ -50,6 +52,9 @@ app.all(["/api/:service","/api/:service/**"], (req, resp, next) => {
   }
   else if (req.params.service.indexOf("user") >= 0){
     authProxy(req,resp,next);
+  }
+  else if (req.params.service.indexOf("market") >= 0){
+    marketDataProxy(req,resp,next);
   }
  
   })
