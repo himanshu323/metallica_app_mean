@@ -111,6 +111,10 @@ export class AuthService{
 
         this.isAuthenticated=true;
 
+        
+
+        
+
         this.authStatusListener.next(true);
 
         this.router.navigate(['/trades']);

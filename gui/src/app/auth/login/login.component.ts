@@ -10,10 +10,10 @@ import { Subscription } from "rxjs";
 })
 export class LoginComponent{
 
-    authSub:Subscription;
-    ngOnDestroy(): void {
-        this.authSub.unsubscribe();
-    }
+    // authSub:Subscription;
+    // ngOnDestroy(): void {
+    //     this.authSub.unsubscribe();
+    // }
 
     isLoading=false;
 
@@ -24,13 +24,11 @@ constructor(private authService:AuthService){
 
 ngOnInit(){
 
-   this.authSub= this.authService.getAuthStatusListener().subscribe(auth=>{
-        this.isLoading=false;
-    })
+
 }
 
     onLogin(form:NgForm){
-        //this.isLoading=true;
+       
         this.isLoading=true;
         if(form.invalid){
             this.isLoading=false;
@@ -39,7 +37,7 @@ ngOnInit(){
         console.log(form);
 
         
-        
+        console.log("outside");
         this.authService.login(form.value.email,form.value.password);
 
 

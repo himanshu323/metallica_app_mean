@@ -4,7 +4,7 @@ const debug=require("debug")("node-angular");
 let config=require("./config/config");
 const socketIO=require("socket.io");
 const app=require("express")();
-// const  {consumeQueue}=require("./consumer");
+const  {consumeQueue}=require("./consumer");
 
 let socketInstance;
 
@@ -82,7 +82,7 @@ io.on("connection",(socket)=>{
                 
     console.log("event occured");
 
-    //consumeQueue(io);
+    consumeQueue(io);
   
 })
 
