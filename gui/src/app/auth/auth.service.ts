@@ -22,8 +22,12 @@ export class AuthService{
 
     private isAuthenticated=false;
 
+    private isRegistered=false;
+
 
     private authStatusListener=new Subject<boolean>();
+
+    private authUserRegistered=new Subject<boolean>();
 
     constructor(private http:HttpClient,private router:Router){
 
@@ -37,9 +41,19 @@ export class AuthService{
         return this.isAuthenticated;
     }
 
+    getIsRegistered(){
+        return this.isRegistered;
+    }
+
     getAuthStatusListener(){
 
         return this.authStatusListener.asObservable();
+
+    }
+
+    getAuthUserRegisteredListener(){
+
+        return this.authUserRegistered.asObservable();
 
     }
     getToken(){
@@ -57,7 +71,9 @@ export class AuthService{
         this.http.post(this.AUTH_API+ "signUp",auth).subscribe((data)=>{
 
         console.log(data);
+        this.isRegistered=true;
         this.router.navigate(['/']);
+        this.authUserRegistered.next(true);
         },(error)=>{
 
             this.authStatusListener.next(false);

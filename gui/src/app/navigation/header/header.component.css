@@ -21,3 +21,9 @@ a:hover{
 .selected{
     color:lightpink
 }
+
+#appLabel{
+    text-decoration-line: none;
+    color: white;
+    
+}

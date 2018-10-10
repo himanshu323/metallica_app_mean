@@ -1,7 +1,7 @@
 {
     "test":{
 
-        "PORT":3004,
+        "PORT":3006,
         "MONGODB_URI":"mongodb://localhost:27017/metallicaTestDB",
         "JWT_TOKEN":"jkh98789bbjh987897dfh2dqoihf"
     }

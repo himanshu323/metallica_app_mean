@@ -1,7 +1,6 @@
 let config=require("./config/config")
 const express = require("express");
 const bodyParser = require("body-parser")
-const tradeRoutes = require("./routes/trades")
 const httpProxy=require("express-http-proxy")
 
 

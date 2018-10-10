@@ -1,8 +1,8 @@
 <mat-card fxLayout="column" fxLayoutAlign="center center">
     <mat-card-header>
         <mat-card-title>
-          <mat-chip-list fxLayout fxLayoutAlign="center center">
-            <mat-chip color="primary">
+          <mat-chip-list  fxLayout fxLayoutAlign="center center">
+            <mat-chip color="primary" >
               <strong id="textLabel">
             Welcome to the Trade App
           </strong>
@@ -13,9 +13,11 @@
     </mat-card-header>
     <img matCardImage src="https://financialtribune.com/sites/default/files/field/image/06_Aman.jpg">
     <mat-card-content >
-      <span *ngIf="!userIsAuthenticated">Please Register or Login to Continue</span>  
+      <span *ngIf="!userIsAuthenticated && !userIsRegistered">Please Register or Login to Continue</span>  
 
     <span *ngIf="userIsAuthenticated">User is successfully logged in</span>
+
+    <span *ngIf="userIsRegistered">User is successfully registered . Please login to continue</span>
     </mat-card-content>
     <!-- <mat-card-actions align="start">
         <button mat-button (click)="onAction1">Action1</button>

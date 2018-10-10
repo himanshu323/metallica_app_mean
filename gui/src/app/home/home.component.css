@@ -31,5 +31,7 @@ img{
 }
 
 mat-card-content{
-    font-style: oblique;
+    font-style: oblique;font-weight: bold;
+    font-size: 15px;
+
 }
