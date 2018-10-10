@@ -1,7 +1,7 @@
 
 const Trade=require("../models/trade")
 
-//const { pushToMessageQ } = require('../Q/producer');
+const { pushToMessageQ } = require('../Q/producer');
 
 const _=require("lodash");
 
@@ -25,9 +25,9 @@ exports.createTrade=(req,resp)=>{
    
 
     trade.save().then(data=>{
-    //     if(process.env.NODE_ENV!=="test"){
-    //     pushToMessageQ(JSON.stringify(data));
-    // }
+        if(process.env.NODE_ENV!=="test"){
+        pushToMessageQ(JSON.stringify(data));
+    }
         resp.status(201).send({message:"Trade added successfully"})
     }).catch(error=>{
 
@@ -116,9 +116,9 @@ exports.updateTrade=(req,resp)=>{
         console.log(trade);
             if(trade.n>0){
 
-                // if(process.env.NODE_ENV!=="test"){
-                //     pushToMessageQ(JSON.stringify(trade));
-                // }
+                if(process.env.NODE_ENV!=="test"){
+                    pushToMessageQ(JSON.stringify(trade));
+                }
                 return resp.status(201).send({
                     message:"Updated successfully"
                 })
@@ -144,9 +144,9 @@ exports.deleteTrade=(req,resp)=>{
     Trade.deleteOne({ _id: req.params.id ,creator:req.userData.id}).then((res) => {
 
         if (res.n > 0) {
-            // if(process.env.NODE_ENV!=="test"){
-            //     pushToMessageQ(JSON.stringify(res));
-            // }
+            if(process.env.NODE_ENV!=="test"){
+                pushToMessageQ(JSON.stringify(res));
+            }
             resp.status(200).send({ message: "Trade deleted successfully" })
         }
         else {
