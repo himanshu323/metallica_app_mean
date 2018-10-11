@@ -38,6 +38,12 @@ module.exports = {
       name: 'Notification Service',
       script: basePath + '/notificationService/server.js',
       watch: true
+    },
+     // Market Data SERVICE
+     {
+      name: 'Market Data Service',
+      script: basePath + '/market-data/server.js',
+      watch: true
     }
   ]
 };

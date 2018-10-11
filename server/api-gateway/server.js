@@ -1,7 +1,6 @@
 let config=require("./config/config")
 const express = require("express");
 const bodyParser = require("body-parser")
-const tradeRoutes = require("./routes/trades")
 const httpProxy=require("express-http-proxy")
 
 
@@ -37,6 +36,8 @@ const tradeProxy=httpProxy(process.env.TRADE_SERVICE);
 
 const notifyProxy=httpProxy(process.env.NOTIFY_SERVICE);
 
+const marketDataProxy=httpProxy(process.env.MARKETDATA_SERVICE);
+
 
 app.all(["/api/:service","/api/:service/**"], (req, resp, next) => {
   
@@ -50,6 +51,9 @@ app.all(["/api/:service","/api/:service/**"], (req, resp, next) => {
   }
   else if (req.params.service.indexOf("user") >= 0){
     authProxy(req,resp,next);
+  }
+  else if (req.params.service.indexOf("market") >= 0){
+    marketDataProxy(req,resp,next);
   }
  
   })

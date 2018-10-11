@@ -1,7 +1,7 @@
-<mat-toolbar>
+<mat-toolbar >
   <!-- <span *ngFor="let market of marketStatus"> {{market.account }}</span> -->
-
-  <ul *ngFor="let market of marketStatus" fxLayout fxLayoutAlign="center center" fxLayoutGap="12px">
+<section fxLayout fxLayoutAlign="center center" fxFlex fxLayoutGap="10px" >
+  <ul *ngFor="let market of marketStatus" fxLayout fxLayoutAlign="center center" fxLayoutGap="16px">
 
     <li >{{market.account}}</li>
     <li>{{market.price}}</li>
@@ -10,4 +10,6 @@
     
     }" >{{market.diff}}</li>
   </ul>
+
+</section>
 </mat-toolbar>

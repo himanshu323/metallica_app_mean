@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 import { AuthService } from '../../auth/auth.service';
 import { Subscription } from 'rxjs';
 import { SocketService } from '../../socket.service';
+import { ActivatedRoute } from '@angular/router';
+import { Data } from '@angular/router';
 
 
 @Component({
@@ -42,7 +44,7 @@ export class TradeListComponent implements OnInit {
   @ViewChild(MatPaginator) paginator:MatPaginator;
 
   constructor(private traderService:TradeService,private router:Router,private authService:AuthService,
-    private socketService:SocketService) { 
+    private socketService:SocketService,private route:ActivatedRoute) { 
 
 
 
@@ -51,7 +53,9 @@ export class TradeListComponent implements OnInit {
 
   ngOnInit() {
 
-    
+    this.route.data.subscribe((data: Data) => {
+      console.log("Hello Resolver", data['server']);
+    })
 
     this.userIsAuthenticated=this.authService.getIsAuthenticated();
     this.userId=this.authService.getUserId();

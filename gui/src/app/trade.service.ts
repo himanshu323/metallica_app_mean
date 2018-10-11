@@ -118,9 +118,45 @@ export class TradeService{
         this.tradesUpdate.next({trades:this.trades});
 
 
+        
         })
 
+    
+    }
 
+    getTradesValues(){
+        return this.http.get<{ message: string, trades: any }>(this.TRADES_API)
+            .pipe(map(tradesData => {
+
+                return {
+                    trades: tradesData.trades.map(trade => {
+                        return {
+                            quantity: trade.quantity,
+
+                            tradeDate: trade.tradeDate,
+
+                            id: trade._id,
+                            commodity: trade.commodity,
+
+                            price: trade.price,
+
+                            counterparty: trade.counterparty,
+
+                            location: trade.location,
+
+                            side: trade.side,
+
+                            tradeId: trade.tradeId,
+
+                            creator: trade.creator
+
+                        }
+
+
+                    }),
+                    message: tradesData.message
+                }
+            }));
     }
 
 

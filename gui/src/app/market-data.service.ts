@@ -31,7 +31,7 @@ export class MarketDataService {
   }
 
   getInitialMarketStatus() {
-    return this.httpClient.get<MarketPrice[]>(`${this.baseUrl}api/market`);
+    return this.httpClient.get<MarketPrice[]>(`${environment.apiUrl}api/market`);
   }
 
   getUpdates() {

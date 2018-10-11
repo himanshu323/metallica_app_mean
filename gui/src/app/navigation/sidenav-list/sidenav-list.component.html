@@ -3,7 +3,7 @@
         
         <mat-nav-list >
 
-            <a mat-icon mat-list-item routerLink="/trades" routerLinkActive="selected" (click)="onClose()">
+            <a mat-icon  *ngIf="userIsAuthenticated" mat-list-item routerLink="/trades" routerLinkActive="selected" (click)="onClose()">
                 
                 <mat-icon>horizontal_split</mat-icon>
 
@@ -12,7 +12,7 @@
     
                 
 
-            <a mat-list-item routerLink="/transfer" routerLinkActive="selected" (click)="onClose()">
+            <a mat-list-item  *ngIf="userIsAuthenticated"  (click)="onClose()">
             
                 <mat-icon>horizontal_split</mat-icon>
 
@@ -23,7 +23,7 @@
     
    
 
-            <a mat-list-item routerLink="/transport" routerLinkActive="selected" (click)="onClose()">
+            <a mat-list-item *ngIf="userIsAuthenticated"  (click)="onClose()">
             
             
                 <mat-icon>horizontal_split</mat-icon>
@@ -32,6 +32,24 @@
             
             </a>
 
+
+            <a mat-list-item *ngIf="!userIsAuthenticated" routerLink="/auth/signUp" routerLinkActive="selected" (click)="onClose()">
+            
+            
+                <mat-icon>horizontal_split</mat-icon>
+
+                <span class="navigation-items">Register</span>
+            
+            </a>
+
+            <a mat-list-item *ngIf="!userIsAuthenticated" routerLink="/auth/login" routerLinkActive="selected" (click)="onClose()">
+            
+            
+                <mat-icon>horizontal_split</mat-icon>
+
+                <span class="navigation-items">Login</span>
+            
+            </a>
     
 
 

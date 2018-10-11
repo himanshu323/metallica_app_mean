@@ -1,4 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { AuthService } from '../../auth/auth.service';
 
 
 @Component({
@@ -8,10 +10,21 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class SidenavListComponent implements OnInit {
 
+  userIsAuthenticated=false;
+
+  private authStatusSub:Subscription;
+    ngOnDestroy(): void {
+        this.authStatusSub.unsubscribe();
+    }
   @Output() sideClose=new EventEmitter<void>();
-  constructor() { }
+  constructor(private authService:AuthService) { }
 
   ngOnInit() {
+
+    this.userIsAuthenticated=this.authService.getIsAuthenticated();
+    this.authStatusSub= this.authService.getAuthStatusListener().subscribe(isAuthenticated=>{
+         this.userIsAuthenticated=isAuthenticated;
+     })
   }
 
 

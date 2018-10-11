@@ -4,7 +4,8 @@
         "PORT":3003,
         "AUTH_SERVICE":"http://localhost:3001",
         "TRADE_SERVICE":"http://localhost:3002",
-        "NOTIFY_SERVICE":"http://localhost:3003"
+        "NOTIFY_SERVICE":"http://localhost:3003",
+        "MARKETDATA_SERVICE":"http://localhost:3004"
        
     }
 ,
@@ -13,7 +14,8 @@
         "PORT":3000,
         "AUTH_SERVICE":"http://localhost:3001",
         "TRADE_SERVICE":"http://localhost:3002",
-        "NOTIFY_SERVICE":"http://localhost:3003"
+        "NOTIFY_SERVICE":"http://localhost:3003",
+        "MARKETDATA_SERVICE":"http://localhost:3004"
 
     }
 }

@@ -40,13 +40,13 @@ const marketPositions =
             diff: 0
             
         }
-,
-        {
-            account: "DAX",
-            price: 520.45,
-            diff: 0
+// ,
+//         // {
+//         //     account: "DAX",
+//         //     price: 520.45,
+//         //     diff: 0
 
-        }
+//         // }
 
 
         , {
