@@ -1,13 +1,11 @@
 import { NgModule, OnInit } from "@angular/core";
 import { Component } from "@angular/core";
 import { SocketService } from "../socket.service";
-import { TradeService } from "../trade.service";
 import { Router } from "@angular/router";
-import { MarketPrice } from "src/app/market-price.model";
-import { MarketDataService } from "src/app/market-data.service";
 import { ActivatedRouteSnapshot } from "@angular/router";
 import { Data } from "@angular/router";
 import { ActivatedRoute } from "@angular/router";
+import { MarketDataService } from "./market-data/market-data.service";
 
 @Component({
     selector:'app-trade',

@@ -1,9 +1,10 @@
-import { Trade } from "src/app/trade.model";
+
 import { Resolve, RouterStateSnapshot } from "@angular/router";
 import { ActivatedRouteSnapshot } from "@angular/router";
 import { Observable } from "rxjs";
 import { Injectable } from "@angular/core";
-import { TradeService } from "src/app/trade.service";
+import { TradeService } from "./trade.service";
+
 
 @Injectable({providedIn:"root"})
 export class TradeResolver implements Resolve<{ message: string, trades: any }>{

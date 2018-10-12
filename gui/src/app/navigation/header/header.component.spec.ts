@@ -58,11 +58,21 @@ describe('HeaderComponent', () => {
    })
 
 
-   it("should contain router link with trades",()=>{
+   it("should contain router link with trades if user is authenticated",()=>{
 
+
+    component.userIsAuthenticated=true;
+    fixture.detectChanges();
     let des= fixture.debugElement.queryAll(By.directive(RouterLinkWithHref));
  
-    let index=des.findIndex(de=>de.properties['href']=="/trades");
+    let index=des.findIndex(de=>
+      
+      {
+        
+        return de.properties['href']=="/trades"
+    
+      }
+    );
  
     expect(index).toBeGreaterThan(-1);
  

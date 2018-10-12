@@ -90,6 +90,8 @@ export class AuthService{
 
         this.http.post<{token:string,expiresIn:number,userId:string}>(this.AUTH_API+"login",authData).subscribe(response=>{
 
+
+           console.log("Done"); 
         this.token=response.token;
 
         if(this.token){

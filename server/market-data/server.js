@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 app.get('/api/market', (req, res) => {
 
     console.log(market.marketPositions);
-    res.send(market.marketPositions);
+    res.status(200).send(market.marketPositions);
 });
 
 setInterval(function () {
@@ -37,3 +37,5 @@ io.on('connection', function (socket) {
 http.listen(port, () => {
     console.log(`Listening on *:${port}`);
 });
+
+module.exports={app};

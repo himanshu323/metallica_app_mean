@@ -1,11 +1,12 @@
 
-import { MarketPrice } from './market-price.model';
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import * as socketio from 'socket.io-client';
 import { Subject, from } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { MarketData } from './market-data.model';
 
 @Injectable({
   providedIn: 'root'
@@ -31,15 +32,15 @@ export class MarketDataService {
   }
 
   getInitialMarketStatus() {
-    return this.httpClient.get<MarketPrice[]>(`${environment.apiUrl}api/market`);
+    return this.httpClient.get<MarketData[]>(`${environment.apiUrl}api/market`);
   }
 
   getUpdates() {
 
-    let marketSub = new Subject<MarketPrice>();
+    let marketSub = new Subject<MarketData[]>();
     let marketSubObservable = marketSub.asObservable();
 
-    this.socket.on('market', (marketStatus: MarketPrice) => {
+    this.socket.on('market', (marketStatus: MarketData[]) => {
       marketSub.next(marketStatus);
     });
 

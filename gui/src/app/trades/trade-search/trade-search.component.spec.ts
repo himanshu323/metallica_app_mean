@@ -6,10 +6,10 @@ import { By } from '@angular/platform-browser';
 import { NgForm, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { TradeService } from 'src/app/trade.service';
 import { Router } from '@angular/router';
 import { AngularMaterialModule } from 'src/app/angular-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TradeService } from '../trade.service';
 
 
 describe('TradeSearchComponent', () => {

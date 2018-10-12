@@ -6,13 +6,14 @@ import { By } from '@angular/platform-browser';
 import { NgForm, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { TradeService } from 'src/app/trade.service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { AngularMaterialModule } from 'src/app/angular-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthService } from 'src/app/auth/auth.service';
 import { SocketService } from 'src/app/socket.service';
-import { of } from 'rxjs';
+import { of, Subject } from 'rxjs';
+import { RouterTestingModule } from '@angular/router/testing';
+import { TradeService } from '../trade.service';
 
 describe('TradeListComponent', () => {
   let component: TradeListComponent;
@@ -25,11 +26,23 @@ describe('TradeListComponent', () => {
     }
   }
 
+
+  class ActivatedRouteStub{
+    private subject=new Subject();
+
+    push(value){
+      this.subject.next(value);
+    }
+
+    get data(){
+      return this.subject.asObservable();
+    }
+  }
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [TradeListComponent],
       imports: [FormsModule, HttpClientModule, AngularMaterialModule, BrowserAnimationsModule],
-      providers: [TradeService,AuthService,SocketService, { provide: Router, useClass: RouterStub }],
+      providers: [TradeService,AuthService,SocketService,{ provide: Router, useClass: RouterStub },{ provide: ActivatedRoute, useClass: ActivatedRouteStub }],
       schemas: [NO_ERRORS_SCHEMA],
     })
       .compileComponents();

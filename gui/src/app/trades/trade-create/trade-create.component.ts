@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms/src/directives/ng_form';
-import { Trade } from '../../trade.model';
-import { TradeService } from '../../trade.service';
+
 import { ActivatedRoute, Router } from '@angular/router';
+import { Trade } from '../trade.model';
+import { TradeService } from '../trade.service';
 
 @Component({
   selector: 'app-trade-create',

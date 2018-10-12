@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { TradeSearch } from '../../trade-search.model';
+
 import { Subject } from 'rxjs';
-import { TradeService } from '../../trade.service';
+import { TradeService } from '../trade.service';
+import { TradeSearch } from './trade-search.model';
+
 
 @Component({
   selector: 'app-trade-search',

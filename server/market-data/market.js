@@ -128,6 +128,6 @@ let index=0;
 }
 
 module.exports = {
-    marketPositions,
-    updateMarket,
+    marketPositions
+   ,updateMarket
 };

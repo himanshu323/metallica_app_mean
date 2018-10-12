@@ -11,7 +11,7 @@
         </mat-card-title>
         <!-- <mat-card-subtitle>Subtitle</mat-card-subtitle> -->
     </mat-card-header>
-    <img matCardImage src="https://financialtribune.com/sites/default/files/field/image/06_Aman.jpg">
+    <img matCardImage [src]="'assets/images/trade.jpg'" alt="image">
     <mat-card-content >
       <span *ngIf="!userIsAuthenticated && !userIsRegistered">Please Register or Login to Continue</span>  
 

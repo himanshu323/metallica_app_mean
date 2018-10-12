@@ -38,6 +38,10 @@ describe('SidenavListComponent', () => {
 
   it("should contain router link with trades",()=>{
 
+    component.userIsAuthenticated=true;
+    
+    fixture.detectChanges();
+
     let des= fixture.debugElement.queryAll(By.directive(RouterLinkWithHref));
  
     let index=des.findIndex(de=>de.properties['href']=="/trades");

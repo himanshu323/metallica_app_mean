@@ -1,0 +1,22 @@
+{
+  "name": "metallica_app_mean",
+  "version": "1.0.0",
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gui-start":"cd gui && ng serve --port 4202",
+    "servers":"concurrently \"node server/api-gateway/server.js\" \"node server/tradeService/server.js\" \"node server/authService/server.js\" \"node server/market-data/server.js\" \"node server/notificationServicey/server.js\"",
+    "servers-start":"node server/api-gateway/server.js & node server/tradeService/server.js & node server/authService/server.js & node server/market-data/server.js & node server/notificationService/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himanshu323/metallica_app_mean.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himanshu323/metallica_app_mean/issues"
+  },
+  "homepage": "https://github.com/himanshu323/metallica_app_mean#readme"
+}

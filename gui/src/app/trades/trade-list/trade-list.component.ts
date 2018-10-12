@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource, MatSort, MatPaginator } from '@angular/material';
 import { ViewChild } from '@angular/core';
-import { TradeService } from '../../trade.service';
-import { Trade } from '../../trade.model';
-import { TradeSearch } from '../../trade-search.model';
+
 import { Router } from '@angular/router';
 import { AuthService } from '../../auth/auth.service';
 import { Subscription } from 'rxjs';
 import { SocketService } from '../../socket.service';
 import { ActivatedRoute } from '@angular/router';
 import { Data } from '@angular/router';
+import { Trade } from '../trade.model';
+import { TradeService } from '../trade.service';
+import { TradeSearch } from '../trade-search/trade-search.model';
 
 
 @Component({

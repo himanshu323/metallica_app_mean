@@ -2,13 +2,16 @@ import { Injectable } from "@angular/core";
 import { Trade } from "./trade.model";
 import { HttpClient } from "@angular/common/http";
 import { Subject } from "rxjs";
-import { TradeSearch } from "./trade-search.model";
+
 import { map } from 'rxjs/operators'
 
 import * as moment from 'moment';
 import { Router } from "@angular/router";
-import { SocketService } from "./socket.service";
-import { environment } from "../environments/environment";
+
+import { environment } from "../../environments/environment";
+import { TradeSearch } from "./trade-search/trade-search.model";
+import { SocketService } from "../socket.service";
+
 
 
 @Injectable({providedIn:'root'})

@@ -5,6 +5,7 @@ import { RouterTestingModule } from "@angular/router/testing";
 import { RouterOutlet } from "@angular/router";
 import {CUSTOM_ELEMENTS_SCHEMA} from "@angular/core";
 import { SocketService } from "src/app/socket.service";
+import { HttpClientModule } from "@angular/common/http";
 
 
 describe("Test the Trade Component",()=>{
@@ -20,7 +21,7 @@ describe("Test the Trade Component",()=>{
             declarations:[TradeComponent],
           
             schemas: [CUSTOM_ELEMENTS_SCHEMA],
-            imports:[RouterTestingModule.withRoutes([])]
+            imports:[HttpClientModule,RouterTestingModule.withRoutes([])]
         })
 
       fixture=  TestBed.createComponent(TradeComponent);
