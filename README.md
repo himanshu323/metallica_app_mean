@@ -1,27 +1,70 @@
 # MetallicaApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
+This project is developed using the MEAN Stack
 
-## Development server
+M-- Mongoose Database
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+E --- Express for  Web Servers
 
-## Code scaffolding
+A--  Angular for Front End
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+N --- NodeJs for Back End
 
-## Build
+## Steps to start Front end server- Angular App
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Navigate to gui folder using `cd gui` from root directory
 
-## Running unit tests
+-  Install the required dependencies using `npm install`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. [ Make ensure you perform the below steps to start the NodeJs server before navigating to the application ]
 
-## Running end-to-end tests
+## Steps to start the backend developed using Nodejs for Microservices'
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- Navigate to `server` folder
 
-## Further help
+-To start the authService - Navigate to authService folder using `cd authService`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+-Install the required dependenices using `npm install`
+
+- Run `node server.js` to start the auth service
+
+## To start the other microservices namely `Api-gatewayService,TradeService,NotificationService,MarketData Service` , repeat the above steps
+
+-- Navigate to each microservice folder under the `servers` folder and repeat the same steps performed  as done for auth Service
+
+## Other alternative to start the front end and backend servers
+
+-Make ensure all the required dependencies are installed using npm install for both gui and microservices 
+
+-- From root directory, run `npm install`
+
+-- Run `npm run gui-start` to start the front end
+
+-- Run `npm run services-start` to start the back end OR  you can use run `pm2 start server/ecosystem.config.js` to start the servers as well.
+
+## Running unit tests for Angular
+
+Run `ng test`  under the `gui` folder to execute the unit tests via [Karma]
+
+
+## Running unit tests for NodeJs using Mocha
+
+For unit tests developed using Mocha
+
+- Trade microservice , navigate to `server\tradeService` and run "npm test"
+
+- Auth microservice ,  navigate to `server\authService` and run "npm test"
+
+- Market Data microservice ,  navigate to `server\market-data` and run "npm test"
+
+## Running end-to-end tests via Protractor
+
+- Navigate to `testAutomation_Protractor` folder from the root directory
+
+- Insatall all the req dependencies using `npm install`
+
+- Run npm test to start the tests
+
+- Allure reports are generated for the GUI tests .
+
+

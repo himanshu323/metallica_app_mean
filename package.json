@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "gui-start":"cd gui && ng serve --port 4202",
     "servers":"concurrently \"node server/api-gateway/server.js\" \"node server/tradeService/server.js\" \"node server/authService/server.js\" \"node server/market-data/server.js\" \"node server/notificationServicey/server.js\"",
-    "servers-start":"node server/api-gateway/server.js & node server/tradeService/server.js & node server/authService/server.js & node server/market-data/server.js & node server/notificationService/server.js"
+    "services-start":"node server/api-gateway/server.js & node server/tradeService/server.js & node server/authService/server.js & node server/market-data/server.js & node server/notificationService/server.js"
   },
   "repository": {
     "type": "git",
