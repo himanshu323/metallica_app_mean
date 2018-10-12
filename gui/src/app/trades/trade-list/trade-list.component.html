@@ -1,19 +1,6 @@
-<!-- <mat-form-field>
-
-  <input matInput placeholder="Filter value" (keyup)="onFilter($event.target.value)">
-</mat-form-field> -->
-
-<!-- <mat-form-field>
-
-  <input matInput placeholder="Filter value Testing" (keyup)="onFilter($event.target.value)">
-</mat-form-field> -->
 
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort id="tradeTable" >
 
-  <!--- Note that these columns can be defined in any order.
-        The actual rendered columns are set as a property on the row definition" -->
-
-  <!-- Position Column -->
   <ng-container matColumnDef="tradeDate">
     <th mat-header-cell *matHeaderCellDef mat-sort-header> Trade Date </th>
     <td mat-cell *matCellDef="let element"> {{element.tradeDate | date:'dd/MM/yyyy'}} </td>
@@ -24,19 +11,19 @@
       <td mat-cell *matCellDef="let element"> {{element.tradeId}} </td>
     </ng-container>
 
-  <!-- Name Column -->
+  
   <ng-container matColumnDef="commodity">
     <th mat-header-cell *matHeaderCellDef mat-sort-header> Commodity </th>
     <td mat-cell *matCellDef="let element"> {{element.commodity | titlecase}} </td>
   </ng-container>
 
-  <!-- Weight Column -->
+ 
   <ng-container matColumnDef="side">
     <th mat-header-cell *matHeaderCellDef mat-sort-header> Side </th>
     <td mat-cell *matCellDef="let element"> {{element.side | titlecase}} </td>
   </ng-container>
 
-  <!-- Symbol Column -->
+
   <ng-container matColumnDef="qty">
     <th mat-header-cell *matHeaderCellDef mat-sort-header> Quantity </th>
     <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>

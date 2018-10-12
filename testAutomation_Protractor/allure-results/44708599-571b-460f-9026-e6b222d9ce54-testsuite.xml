@@ -1,0 +1,79 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539348908115' stop='1539348927161'>
+    <name>Edit Trade Test</name>
+    <title>Edit Trade Test</title>
+    <test-cases>
+        <test-case start='1539348908227' status='passed' stop='1539348921030'>
+            <name>login to trade search</name>
+            <title>login to trade search</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='52eb13e4-592d-4b85-b46f-65f4ae38d887-attachment.png' type='image/png' size='44042'/>
+            </attachments>
+        </test-case>
+        <test-case start='1539348921031' status='failed' stop='1539348927160'>
+            <name>edit the trade</name>
+            <title>edit the trade</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='13e4bc82-77c9-4bc8-94a6-bf2c768f6db4-attachment.png' type='image/png' size='226448'/>
+            </attachments>
+            <failure>
+                <message>Failed: unknown error: Element &lt;mat-select _ngcontent-c27="" class="mat-select ng-tns-c21-29 mat-select-required ng-untouched ng-pristine ng-star-inserted ng-valid" name="location" placeholder="Location Select" required="" role="listbox" ng-reflect-required="" ng-reflect-name="location" ng-reflect-placeholder="Location Select" id="mat-select-6" tabindex="0" aria-label="Location Select" aria-required="true" aria-disabled="false" aria-invalid="false" aria-multiselectable="false" ng-reflect-model="Denver">...&lt;/mat-select> is not clickable at point (1024, 728). Other element would receive the click: &lt;mat-sidenav-content _ngcontent-c0="" class="mat-drawer-content mat-sidenav-content">...&lt;/mat-sidenav-content>
+                  (Session info: chrome=69.0.3497.100)
+                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)</message>
+                <stack-trace>WebDriverError: unknown error: Element &lt;mat-select _ngcontent-c27="" class="mat-select ng-tns-c21-29 mat-select-required ng-untouched ng-pristine ng-star-inserted ng-valid" name="location" placeholder="Location Select" required="" role="listbox" ng-reflect-required="" ng-reflect-name="location" ng-reflect-placeholder="Location Select" id="mat-select-6" tabindex="0" aria-label="Location Select" aria-required="true" aria-disabled="false" aria-invalid="false" aria-multiselectable="false" ng-reflect-model="Denver">...&lt;/mat-select> is not clickable at point (1024, 728). Other element would receive the click: &lt;mat-sidenav-content _ngcontent-c0="" class="mat-drawer-content mat-sidenav-content">...&lt;/mat-sidenav-content>
+                  (Session info: chrome=69.0.3497.100)
+                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)
+                    at Object.checkLegacyResponse (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/selenium-webdriver/lib/error.js:546:15)
+                    at parseHttpResponse (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/selenium-webdriver/lib/http.js:509:13)
+                    at doSend.then.response (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/selenium-webdriver/lib/http.js:441:30)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)
+                From: Task: WebElement.click()
+                    at Driver.schedule (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+                    at WebElement.schedule_ (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/selenium-webdriver/lib/webdriver.js:2010:25)
+                    at WebElement.click (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/selenium-webdriver/lib/webdriver.js:2092:17)
+                    at actionFn (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/built/element.js:89:44)
+                    at Array.map (&lt;anonymous>)
+                    at actionResults.getWebElements.then (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/built/element.js:461:65)
+                    at ManagedPromise.invokeCallback_ (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at asyncRun (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27)Error
+                    at ElementArrayFinder.applyAction_ (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as click] (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as click] (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/built/element.js:831:22)
+                    at TradeCreate.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/TestApp/pages/tradeCreate.ts:163:35)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/TestApp/pages/tradeCreate.js:4:58)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)
+                From: Task: Run it("edit the trade") in control flow
+                    at UserContext.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at QueueRunner.execute (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)
+                    at Spec.queueRunnerFactory (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)
+                    at Spec.execute (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)
+                    at UserContext.fn (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)
+                    at attempt (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                From asynchronous test: 
+                Error
+                    at Object.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/TestApp/specs/tradeEditTest.ts:39:5)
+                    at Generator.next (&lt;anonymous>)
+                    at /Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/TestApp/specs/tradeEditTest.js:7:71
+                    at new Promise (&lt;anonymous>)
+                    at __awaiter (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/TestApp/specs/tradeEditTest.js:3:12)
+                    at Suite.describe (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/TestApp/specs/tradeEditTest.ts:14:37)
+                    at addSpecsToSuite (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

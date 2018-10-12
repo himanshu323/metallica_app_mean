@@ -10,7 +10,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
 const BasePage_1 = require("../../utilities/BasePage");
-const log_1 = require("../../utilities/log");
 const Locators = {
     tradeDate: {
         value: "tradeDate"
@@ -98,7 +97,7 @@ class TradeCreate extends BasePage_1.BasePage {
                 yield this.saveButton.click();
             }
             yield protractor_1.browser.sleep(10000);
-            yield log_1.winston.log("info", "Trade created Successfully");
+            //  await logger.log("info", "Trade created Successfully");
         });
     }
 }

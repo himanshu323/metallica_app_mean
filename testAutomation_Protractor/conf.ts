@@ -38,7 +38,7 @@ export let config: Config = {
   capabilities: {
     browserName: 'chrome'
   },
-  specs: [ './TestApp/specs/tradeSearchTest.js' ],
+  specs: [ './TestApp/specs/tradeCreateTest.js' ],
  
 
   // You could set no globals to true to avoid jQuery '$' and protractor '$'

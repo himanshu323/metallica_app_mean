@@ -1,8 +1,7 @@
 
 *{
 font-size: 10px;
-/* margin: 0%;
-padding: 0% */
+
 }
 mat-toolbar{
 
@@ -14,9 +13,7 @@ ul{
     line-height: 1em;
     
 }
-/* li{
-    color:red;
-} */
+
 .positive{
     color: green
 }

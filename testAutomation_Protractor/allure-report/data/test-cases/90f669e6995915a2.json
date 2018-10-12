@@ -1,0 +1,70 @@
+{
+  "uid" : "90f669e6995915a2",
+  "name" : "delete the trade",
+  "fullName" : "Delete Trade Test.delete the trade",
+  "historyId" : "458d00ef3c4ccbcd75ac5e946fd789ca",
+  "time" : {
+    "start" : 1539349646674,
+    "stop" : 1539349651299,
+    "duration" : 4625
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d191b0ada741aee4",
+      "name" : "Screenshot",
+      "source" : "d191b0ada741aee4.png",
+      "type" : "image/png",
+      "size" : 156755
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Delete Trade Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Delete Trade Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "delete the trade"
+  }, {
+    "name" : "package",
+    "value" : "Delete Trade Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7d1adf1905c175ed",
+      "status" : "failed",
+      "statusDetails" : "Failed: No element found using locator: By(xpath, //table[@id='tradeTable']/tbody/tr[2]//td[contains(@class,'tradeId')]/following-sibling::td[contains(@class,'mat-column-actions')]//button[@id='deleteButton'])",
+      "time" : {
+        "start" : 1539349579407,
+        "stop" : 1539349583952,
+        "duration" : 4545
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "90f669e6995915a2.json",
+  "parameterValues" : [ ]
+}

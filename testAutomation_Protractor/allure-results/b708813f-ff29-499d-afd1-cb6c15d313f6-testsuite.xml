@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1539349567219' stop='1539349583953'>
+    <name>Delete Trade Test</name>
+    <title>Delete Trade Test</title>
+    <test-cases>
+        <test-case start='1539349567347' status='passed' stop='1539349579407'>
+            <name>login to trade search</name>
+            <title>login to trade search</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='609e7250-bccf-439f-b882-7422e1f6557a-attachment.png' type='image/png' size='46777'/>
+            </attachments>
+        </test-case>
+        <test-case start='1539349579407' status='failed' stop='1539349583952'>
+            <name>delete the trade</name>
+            <title>delete the trade</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='50ac6774-ba09-42d4-a52b-7999ed43b6da-attachment.png' type='image/png' size='172353'/>
+            </attachments>
+            <failure>
+                <message>Failed: No element found using locator: By(xpath, //table[@id='tradeTable']/tbody/tr[2]//td[contains(@class,'tradeId')]/following-sibling::td[contains(@class,'mat-column-actions')]//button[@id='deleteButton'])</message>
+                <stack-trace>NoSuchElementError: No element found using locator: By(xpath, //table[@id='tradeTable']/tbody/tr[2]//td[contains(@class,'tradeId')]/following-sibling::td[contains(@class,'mat-column-actions')]//button[@id='deleteButton'])
+                    at elementArrayFinder.getWebElements.then (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/built/element.js:814:27)
+                    at ManagedPromise.invokeCallback_ (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+                    at TaskQueue.execute_ (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at asyncRun (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+                    at /Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/selenium-webdriver/lib/promise.js:668:7
+                    at process._tickCallback (internal/process/next_tick.js:68:7)Error
+                    at ElementArrayFinder.applyAction_ (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as click] (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as click] (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/built/element.js:831:22)
+                    at TradeGrid.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/TestApp/pages/tradeGrid.ts:193:198)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/TestApp/pages/tradeGrid.js:4:58)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)
+                From: Task: Run it("delete the trade") in control flow
+                    at UserContext.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at QueueRunner.execute (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)
+                    at Spec.queueRunnerFactory (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)
+                    at Spec.execute (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)
+                    at UserContext.fn (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)
+                    at attempt (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                From asynchronous test: 
+                Error
+                    at Object.&lt;anonymous> (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/TestApp/specs/tradeDeleteTest.ts:38:5)
+                    at Generator.next (&lt;anonymous>)
+                    at /Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/TestApp/specs/tradeDeleteTest.js:7:71
+                    at new Promise (&lt;anonymous>)
+                    at __awaiter (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/TestApp/specs/tradeDeleteTest.js:3:12)
+                    at Suite.describe (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/TestApp/specs/tradeDeleteTest.ts:13:39)
+                    at addSpecsToSuite (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/himanshuarora/WebDevelopment/metallica-mean-app/metallica_app_mean/testAutomation_Protractor/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

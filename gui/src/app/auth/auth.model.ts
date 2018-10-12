@@ -1,6 +1,6 @@
-export class AuthData{
+export class AuthData {
 
 
-email:string;
-password:string;
+    email: string;
+    password: string;
 }

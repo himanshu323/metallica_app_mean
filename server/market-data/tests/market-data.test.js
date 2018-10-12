@@ -8,12 +8,6 @@ const market = require('../market');
 describe("Test the Market Data GET API",()=>{
 
 
-
-   
-
-  
-
-
         it("should be able to retrieve the market data on get api/market ",(done)=>{
 
             

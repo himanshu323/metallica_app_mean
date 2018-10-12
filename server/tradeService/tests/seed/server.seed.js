@@ -24,7 +24,7 @@ password:"B1234@testing"
 
 
 }]
-console.log(users);
+
 let userTokens=[{
     token:jwt.sign({email:users[0].email,id:users[0]._id},process.env.JWT_TOKEN)
 },{
@@ -73,27 +73,6 @@ bcrypt.hash(users[1].password,10).then((hash)=>{
     users[1].password=hash;
 })
 
-// let populateUsers=(done)=>{
-
-//     User.remove({}).then(()=>{
-
-        
-//             let userOne= new User(users[0]).save();
-//             let userTwo=new User(users[1]).save();
-     
-//             Promise.all([userOne,userTwo]).then(()=>{
-//                done();
-             
-//              })
-//           })
-
-      
-
-      
-       
-  
-// }
-   
 let populateTrades=(done)=>{
 
     Trade.remove({}).then(()=>{

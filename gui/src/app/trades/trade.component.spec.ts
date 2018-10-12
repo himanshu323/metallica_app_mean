@@ -3,51 +3,51 @@ import { TradeComponent } from "src/app/trades/trade.component";
 import { By } from "@angular/platform-browser";
 import { RouterTestingModule } from "@angular/router/testing";
 import { RouterOutlet } from "@angular/router";
-import {CUSTOM_ELEMENTS_SCHEMA} from "@angular/core";
+import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { SocketService } from "src/app/socket.service";
 import { HttpClientModule } from "@angular/common/http";
 
 
-describe("Test the Trade Component",()=>{
+describe("Test the Trade Component", () => {
 
-    let component:TradeComponent;
+    let component: TradeComponent;
 
-    let fixture:ComponentFixture<TradeComponent>;
+    let fixture: ComponentFixture<TradeComponent>;
 
-    beforeEach(()=>{
+    beforeEach(() => {
 
 
         TestBed.configureTestingModule({
-            declarations:[TradeComponent],
-          
+            declarations: [TradeComponent],
+
             schemas: [CUSTOM_ELEMENTS_SCHEMA],
-            imports:[HttpClientModule,RouterTestingModule.withRoutes([])]
+            imports: [HttpClientModule, RouterTestingModule.withRoutes([])]
         })
 
-      fixture=  TestBed.createComponent(TradeComponent);
+        fixture = TestBed.createComponent(TradeComponent);
 
-      component=fixture.componentInstance;
+        component = fixture.componentInstance;
 
 
     })
 
 
-    it("Should contain router outlet for Test Create and Edit",()=>{
+    it("Should contain router outlet for Test Create and Edit", () => {
 
-     let deb=   fixture.debugElement.query(By.directive(RouterOutlet));
+        let deb = fixture.debugElement.query(By.directive(RouterOutlet));
 
-     expect(deb).not.toBeNull();
+        expect(deb).not.toBeNull();
 
     })
 
-    it("should create a socket instance for Live Streaming of Trades",()=>{
+    it("should create a socket instance for Live Streaming of Trades", () => {
 
-       let service= TestBed.get(SocketService);
+        let service = TestBed.get(SocketService);
 
-       let spy= spyOn(service,"initializeSocket");
+        let spy = spyOn(service, "initializeSocket");
 
-       fixture.detectChanges();
+        fixture.detectChanges();
 
-       expect(spy).toHaveBeenCalled();
+        expect(spy).toHaveBeenCalled();
     })
 })

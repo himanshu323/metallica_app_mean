@@ -1,5 +1,3 @@
-
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -13,8 +11,8 @@ import { MarketData } from './market-data.model';
 })
 export class MarketDataService {
 
-  
-  private baseUrl = environment.marketDataService ;
+
+  private baseUrl = environment.marketDataService;
   private socket;
   constructor(private httpClient: HttpClient) { }
 

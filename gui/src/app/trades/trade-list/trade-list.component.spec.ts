@@ -27,14 +27,14 @@ describe('TradeListComponent', () => {
   }
 
 
-  class ActivatedRouteStub{
-    private subject=new Subject();
+  class ActivatedRouteStub {
+    private subject = new Subject();
 
-    push(value){
+    push(value) {
       this.subject.next(value);
     }
 
-    get data(){
+    get data() {
       return this.subject.asObservable();
     }
   }
@@ -42,7 +42,7 @@ describe('TradeListComponent', () => {
     TestBed.configureTestingModule({
       declarations: [TradeListComponent],
       imports: [FormsModule, HttpClientModule, AngularMaterialModule, BrowserAnimationsModule],
-      providers: [TradeService,AuthService,SocketService,{ provide: Router, useClass: RouterStub },{ provide: ActivatedRoute, useClass: ActivatedRouteStub }],
+      providers: [TradeService, AuthService, SocketService, { provide: Router, useClass: RouterStub }, { provide: ActivatedRoute, useClass: ActivatedRouteStub }],
       schemas: [NO_ERRORS_SCHEMA],
     })
       .compileComponents();
@@ -51,27 +51,19 @@ describe('TradeListComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(TradeListComponent);
     component = fixture.componentInstance;
-   // fixture.detectChanges();
+    // fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
 
-  it("should set auth prop to true and set the user id for the curret user",()=>{
+  it("should set auth prop to true and set the user id for the curret user", () => {
 
-    let service=TestBed.get(AuthService);
+    let service = TestBed.get(AuthService);
 
-    spyOn(service,"getAuthStatusListener").and.returnValue(of(true));
+    spyOn(service, "getAuthStatusListener").and.returnValue(of(true));
 
-    // spyOn(service,"getUserId").and.returnValue("321");
 
-    // spyOn(service,"getAllTrades");
-
-    //fixture.detectChanges();
-
-    //expect(component.userIsAuthenticated).toBeTruthy();
-
-   // expect(component.userId).toBe("321");
-   })
+  })
 });

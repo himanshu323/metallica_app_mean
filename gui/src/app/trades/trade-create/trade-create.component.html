@@ -16,10 +16,6 @@
 
     <mat-card-subtitle *ngIf="tradeEditFlag">
 
-        <!-- <mat-form-field>
-            <input type="number" matInput  [(ngModel)]="trade.tradeId" >
-          </mat-form-field> -->
-
       <section fxLayout fxLayoutAlign="center center" id="tradeIdLabel">
           <mat-chip-list >
 
@@ -47,12 +43,6 @@
   </mat-select>
 </mat-form-field>
  
-<!-- <label for="side">Side</label>
-
-  <mat-checkbox color="primary" name="buy" ngModel required>Buy</mat-checkbox>
-  <mat-checkbox color="primary" name="sell" ngModel required>Sell</mat-checkbox> -->
-
-
 <mat-radio-group required name="side" [ngModel]="trade.side">
   <label for="side">Side</label>
   <span class="spacer"></span>
@@ -87,9 +77,6 @@
     </mat-option>
   </mat-select>
 </mat-form-field>
-
-  <!-- <mat-hint align="end">{{location.value?.length}} / 20</mat-hint> -->
-  
 
 
 <section fxLayout="row" fxLayoutAlign="center center">

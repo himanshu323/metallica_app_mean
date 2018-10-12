@@ -1,0 +1,69 @@
+{
+  "uid" : "99a61cdcb35fc57d",
+  "name" : "login to trade search",
+  "fullName" : "Delete Trade Test.login to trade search",
+  "historyId" : "d5f2202d1e3be2fd31afb0404006c3f4",
+  "time" : {
+    "start" : 1539349636295,
+    "stop" : 1539349646674,
+    "duration" : 10379
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "83da99acd86b46c5",
+      "name" : "Screenshot",
+      "source" : "83da99acd86b46c5.png",
+      "type" : "image/png",
+      "size" : 46633
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Delete Trade Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Delete Trade Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "login to trade search"
+  }, {
+    "name" : "package",
+    "value" : "Delete Trade Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5eef4b3a60265408",
+      "status" : "passed",
+      "time" : {
+        "start" : 1539349567347,
+        "stop" : 1539349579407,
+        "duration" : 12060
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "99a61cdcb35fc57d.json",
+  "parameterValues" : [ ]
+}

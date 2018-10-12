@@ -10,25 +10,25 @@ import { AuthService } from '../../auth/auth.service';
 })
 export class SidenavListComponent implements OnInit {
 
-  userIsAuthenticated=false;
+  userIsAuthenticated = false;
 
-  private authStatusSub:Subscription;
-    ngOnDestroy(): void {
-        this.authStatusSub.unsubscribe();
-    }
-  @Output() sideClose=new EventEmitter<void>();
-  constructor(private authService:AuthService) { }
+  private authStatusSub: Subscription;
+  ngOnDestroy(): void {
+    this.authStatusSub.unsubscribe();
+  }
+  @Output() sideClose = new EventEmitter<void>();
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
 
-    this.userIsAuthenticated=this.authService.getIsAuthenticated();
-    this.authStatusSub= this.authService.getAuthStatusListener().subscribe(isAuthenticated=>{
-         this.userIsAuthenticated=isAuthenticated;
-     })
+    this.userIsAuthenticated = this.authService.getIsAuthenticated();
+    this.authStatusSub = this.authService.getAuthStatusListener().subscribe(isAuthenticated => {
+      this.userIsAuthenticated = isAuthenticated;
+    })
   }
 
 
-  onClose(){
-this.sideClose.emit();
+  onClose() {
+    this.sideClose.emit();
   }
 }

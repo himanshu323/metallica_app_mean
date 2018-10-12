@@ -24,14 +24,14 @@ describe('TradeCreateComponent', () => {
     }
   }
 
-  class ActivatedRouteStub{
-    private subject=new Subject();
+  class ActivatedRouteStub {
+    private subject = new Subject();
 
-    push(value){
+    push(value) {
       this.subject.next(value);
     }
 
-    get paramMap(){
+    get paramMap() {
       return this.subject.asObservable();
     }
   }
@@ -39,8 +39,8 @@ describe('TradeCreateComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [TradeCreateComponent],
-      imports: [ AngularMaterialModule, BrowserAnimationsModule,FormsModule,HttpClientModule],
-      providers: [ TradeService,{ provide: Router, useClass: RouterStub },{ provide: ActivatedRoute, useClass: ActivatedRouteStub }],
+      imports: [AngularMaterialModule, BrowserAnimationsModule, FormsModule, HttpClientModule],
+      providers: [TradeService, { provide: Router, useClass: RouterStub }, { provide: ActivatedRoute, useClass: ActivatedRouteStub }],
       schemas: [NO_ERRORS_SCHEMA],
     })
       .compileComponents();
@@ -57,82 +57,82 @@ describe('TradeCreateComponent', () => {
   });
 
 
-  it("should call addTrade method when trade is created",()=>{
-//     fixture.detectChanges();
+  it("should call addTrade method when trade is created", () => {
+    //     fixture.detectChanges();
 
-//     let service=TestBed.get(TradeService);
-//     component.mode="create";
+    //     let service=TestBed.get(TradeService);
+    //     component.mode="create";
 
-//     let spy=spyOn(service,"addTrade");
-    
-//     let de=fixture.debugElement.query(By.css(".tradeDate"));
+    //     let spy=spyOn(service,"addTrade");
 
-   
-
-//    expect(de).not.toBeNull();
-
-//    de.triggerEventHandler("submit",null);
-
-//    expect(spy).toHaveBeenCalled();
-
-// let del= fixture.debugElement.query(By.css("#createForm"));
-
-//    expect(del).not.toBeNull();
-
-//     let service = TestBed.get(TradeService);
-//     let spy = spyOn(service, "addTrade")
-
-//     fixture.detectChanges();
-
-//    del.triggerEventHandler("submit",null);
+    //     let de=fixture.debugElement.query(By.css(".tradeDate"));
 
 
-   
-    
-//    expect(spy).toHaveBeenCalled()
+
+    //    expect(de).not.toBeNull();
+
+    //    de.triggerEventHandler("submit",null);
+
+    //    expect(spy).toHaveBeenCalled();
+
+    // let del= fixture.debugElement.query(By.css("#createForm"));
+
+    //    expect(del).not.toBeNull();
+
+    //     let service = TestBed.get(TradeService);
+    //     let spy = spyOn(service, "addTrade")
+
+    //     fixture.detectChanges();
+
+    //    del.triggerEventHandler("submit",null);
+
+
+
+
+    //    expect(spy).toHaveBeenCalled()
 
 
 
 
   })
 
-  it("should set tradeCreate to true and route to trades when Trade Create is called",()=>{
+  it("should set tradeCreate to true and route to trades when Trade Create is called", () => {
 
 
-    let router=TestBed.get(Router);
+    let router = TestBed.get(Router);
 
-    let spy=spyOn(router,"navigate");
-    
+    let spy = spyOn(router, "navigate");
 
-    
+
+
 
     component.onTradeCreate();
 
-    
+
 
 
     expect(spy).toHaveBeenCalledWith(['/trades']);
 
     expect(component.tradeCreateFlag).toBeTruthy();
 
-    
+
 
 
   })
 
-  it("should set the trade create and edit flag to false when clicked on Trade Cancel",()=>{
+  it("should set the trade create and edit flag to false when clicked on Trade Cancel", () => {
 
-        
-    let router=TestBed.get(Router);
 
-    let spy=spyOn(router,"navigate");
-    
+    let router = TestBed.get(Router);
 
-    
+    let spy = spyOn(router, "navigate");
+
+
+
 
     component.onTradeCancel();
 
-    
+
 
 
     expect(spy).toHaveBeenCalledWith(['/trades']);

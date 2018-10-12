@@ -7,10 +7,11 @@ import { TradeCreate } from "../pages/tradeCreate";
 import { TradeGrid } from "../pages/tradeGrid";
 import { logger } from "../../utilities/loggerUtils";
 
+
 var basePage = new BasePage();
 var homePage = new HomePage();
 let tradeSearch=new TradeSearch();
-let tradeCreate=new TradeCreate();
+
 let tradeGrid=new TradeGrid();
 
 let data: any = dataFile;
@@ -36,11 +37,12 @@ beforeAll(async ()=>{
 
         await browser.manage().window().maximize();
 
+
         await homePage.loginToTrade(data.testData.login.email,data.testData.login.password);
     })
 
 
-    xit("search the trade",async()=>{
+    it("search the trade",async()=>{
 
         
 
@@ -67,61 +69,8 @@ beforeAll(async ()=>{
         
     })
 
-    xit("enter the details for trade create",async()=>{
+   
+   
 
-        
-
-        
-        await tradeCreate.enterTradeCreateDetails(
-            data.testData.tradeCreate.tradeDate,
-            data.testData.tradeCreate.commodity,
-            data.testData.tradeCreate.side,
-            data.testData.tradeCreate.counterparty,
-            data.testData.tradeCreate.location,
-            data.testData.tradeCreate.price,
-            data.testData.tradeCreate.quantity
-          
-        )
-
-        
-    })
-
-    xit("delete the trade",async()=>{
-
-        
-
-        
-        await browser.sleep(4000);
-      let test=  await tradeGrid.deleteTrade(data.testData.tradeDelete.tradeId)
-
-        if(test){
-            logger.info("Trade deleted successfully")
-        }
-
-        
-    })
-
-    it("edit the trade",async()=>{
-
-        
-
-        await browser.manage().window().maximize();
- 
-        await browser.sleep(4000);
-      let test=  await tradeGrid.editTrade(data.testData.tradeEdit.tradeId)
-
-        if(test){
-            await tradeCreate.enterTradeCreateDetails(data.testData.tradeCreate.tradeDate,
-                data.testData.tradeUpdate.commodity,
-                data.testData.tradeUpdate.side,
-                data.testData.tradeUpdate.counterparty,
-                data.testData.tradeUpdate.location,
-                data.testData.tradeUpdate.price,
-                data.testData.tradeUpdate.quantity,"edit")
-
-            await logger.info("Details updated successfully")
-        }
-
-        
-    })
+    
 })

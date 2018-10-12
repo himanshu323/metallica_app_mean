@@ -12,40 +12,38 @@ amqp.connect(process.env.AMQP, (err, conn) => {
 
     ch.assertQueue(q, { durable: true });
 
-    channel=ch;
+    channel = ch;
 
-   
+
   });
 });
 
-const consumeQueue=(socketInstance)=>{
+const consumeQueue = (socketInstance) => {
 
 
-    if (!channel) setTimeout(consumeQueue(msg), 1000);
+  if (!channel) setTimeout(consumeQueue(msg), 1000);
 
 
-    channel.consume(
-        q,
-        msg => {
-          let trade;
-  
-          try {
-            trade = JSON.parse(msg.content.toString());
-          } catch (e) {
-            console.log(e);
-  
-            trade = msg.content.toString();
-          }
-  
-          console.log('I RECEIVED A MAIL!!!', trade);
-  
-         socketInstance.emit("notifyTrade");
-  
-          channel.ack(msg);
-        },
-        { noAck: false }
-      );
+  channel.consume(
+    q,
+    msg => {
+      let trade;
+
+      try {
+        trade = JSON.parse(msg.content.toString());
+      } catch (e) {
+
+
+        trade = msg.content.toString();
+      }
+
+      socketInstance.emit("notifyTrade");
+
+      channel.ack(msg);
+    },
+    { noAck: false }
+  );
 }
-module.exports={
-    consumeQueue
+module.exports = {
+  consumeQueue
 }

@@ -12,16 +12,16 @@ import { TradeService } from '../trade.service';
 })
 export class TradeCreateComponent implements OnInit {
 
-  tradeCreateFlag:boolean;
+  tradeCreateFlag: boolean;
 
-  tradeCreateButton:boolean=true;
+  tradeCreateButton: boolean = true;
 
-  tradeEditFlag:boolean;
+  tradeEditFlag: boolean;
 
-  mode="create";
+  mode = "create";
   tradeId;
 
-  trade:Trade={
+  trade: Trade = {
 
     quantity: 0,
 
@@ -40,74 +40,66 @@ export class TradeCreateComponent implements OnInit {
 
     id: null,
 
-    tradeId:null,
+    tradeId: null,
 
-    creator:null
+    creator: null
 
 
   };
-  ngOnInit(){
-
-    console.log("Mode",this.mode);
-
-    this.route.paramMap.subscribe(params=>{
-      console.log("test2Inside");
-      console.log(params);
-      console.log(params.has("id"))
-        if(params.has("id")){
-
-          console.log("test1Inside");
-          this.mode="edit";
-
-          this.tradeEditFlag=true;
-          this.tradeCreateButton=false;
-         this.tradeId= params.get("id")
-
-          console.log(this.tradeId);
-
-            this.tradeService.getTrade(this.tradeId).subscribe(trade=>{
-
-              console.log("test1");
-              console.log(trade);
-              this.trade={
+  ngOnInit() {
 
 
-                quantity: trade.quantity,
 
-                tradeDate: trade.tradeDate,
+    this.route.paramMap.subscribe(params => {
 
-
-                commodity: trade.commodity,
-
-                price: trade.price,
-
-                counterparty: trade.counterparty,
-
-                location: trade.location,
-
-                side: trade.side,
-
-                id: trade._id,
-
-                tradeId:trade.tradeId,
-
-                creator:trade.creator
+      if (params.has("id")) {
 
 
-              };
-            })
-        }
+        this.mode = "edit";
 
-        // else{
+        this.tradeEditFlag = true;
+        this.tradeCreateButton = false;
+        this.tradeId = params.get("id")
 
-        //   this.mode="create";
-        //   this.trade=null;
-        // }
+
+
+        this.tradeService.getTrade(this.tradeId).subscribe(trade => {
+
+          this.trade = {
+
+
+            quantity: trade.quantity,
+
+            tradeDate: trade.tradeDate,
+
+
+            commodity: trade.commodity,
+
+            price: trade.price,
+
+            counterparty: trade.counterparty,
+
+            location: trade.location,
+
+            side: trade.side,
+
+            id: trade._id,
+
+            tradeId: trade.tradeId,
+
+            creator: trade.creator
+
+
+          };
+        })
+      }
+
+
 
     })
 
-    console.log("out");
-    
+
+
   }
 
   commodities = [
@@ -139,103 +131,100 @@ export class TradeCreateComponent implements OnInit {
     { value: 'Denver', viewValue: 'Denver' }
   ];
 
-  constructor(private tradeService:TradeService,private route:ActivatedRoute,private router:Router) { }
+  constructor(private tradeService: TradeService, private route: ActivatedRoute, private router: Router) { }
 
 
-  onTradeCreate(){
+  onTradeCreate() {
 
 
-    this.tradeCreateFlag=true;
+    this.tradeCreateFlag = true;
 
     this.router.navigate(['/trades']);
   }
 
-  onTradeCancel(){
+  onTradeCancel() {
 
-    this.tradeCreateFlag=false;
+    this.tradeCreateFlag = false;
 
-    this.tradeCreateButton=true;
+    this.tradeCreateButton = true;
 
-    this.tradeEditFlag=false;
+    this.tradeEditFlag = false;
 
     this.router.navigate(['/trades']);
 
   }
 
-  onTrade(form:NgForm){
+  onTrade(form: NgForm) {
 
-    if(form.invalid){
+    if (form.invalid) {
       return
     }
 
-    if (this.mode == "create"){
+    if (this.mode == "create") {
 
-    let trade:Trade={
+      let trade: Trade = {
 
-     
-      quantity:form.value.quantity,
 
-      tradeDate:form.value.tradeDate,
-  
-      id:null,
-  
-      commodity:form.value.commodity,
-  
-      price:form.value.price,
-  
-      counterparty:form.value.counterparty,
-  
-      location:form.value.location,
-  
-      side:form.value.side,
+        quantity: form.value.quantity,
 
-      tradeId:null,
+        tradeDate: form.value.tradeDate,
 
-      creator:null
-  
+        id: null,
+
+        commodity: form.value.commodity,
+
+        price: form.value.price,
+
+        counterparty: form.value.counterparty,
+
+        location: form.value.location,
+
+        side: form.value.side,
+
+        tradeId: null,
+
+        creator: null
+
+      }
+
+
+
+      this.tradeService.addTrade(trade);
     }
 
-    console.log(form);
+    else if (this.mode == "edit") {
 
 
-    console.log(trade);
 
-    this.tradeService.addTrade(trade);
-  }
+      let trade = {
+        quantity: form.value.quantity,
 
-  else if(this.mode=="edit"){
+        tradeDate: form.value.tradeDate,
 
-    
+        id: this.tradeId,
 
-    let trade={
-      quantity: form.value.quantity,
+        commodity: form.value.commodity,
 
-      tradeDate: form.value.tradeDate,
+        price: form.value.price,
 
-      id: this.tradeId,
+        counterparty: form.value.counterparty,
 
-      commodity: form.value.commodity,
+        location: form.value.location,
 
-      price: form.value.price,
+        side: form.value.side,
 
-      counterparty: form.value.counterparty,
+        tradeId: form.value.tradeId,
 
-      location: form.value.location,
+        creator: this.trade.creator
 
-      side: form.value.side,
 
-      tradeId:form.value.tradeId,
+      }
 
-      creator:this.trade.creator
+      this.tradeService.updateTrade(this.tradeId, trade);
 
 
     }
 
-    this.tradeService.updateTrade(this.tradeId,trade);
-
-
-  }
-
-  form.onReset();
+    form.onReset();
   }
 }

@@ -1,0 +1,59 @@
+{
+  "uid" : "699ef626ff09bd77",
+  "name" : "login to trade search",
+  "fullName" : "Edit Trade Test.login to trade search",
+  "historyId" : "1ca784be489c66606e12fbfec52ad342",
+  "time" : {
+    "start" : 1539349135715,
+    "stop" : 1539349146168,
+    "duration" : 10453
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "37ec03a6d60b8706",
+      "name" : "Screenshot",
+      "source" : "37ec03a6d60b8706.png",
+      "type" : "image/png",
+      "size" : 46775
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Edit Trade Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Edit Trade Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "login to trade search"
+  }, {
+    "name" : "package",
+    "value" : "Edit Trade Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "699ef626ff09bd77.json",
+  "parameterValues" : [ ]
+}

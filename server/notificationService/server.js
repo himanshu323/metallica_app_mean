@@ -67,7 +67,6 @@ const normalizePort = val => {
 let server=http.createServer(app)
 
 
-  console.log("onSockConn")
   let io= socketIO(server);
 
 

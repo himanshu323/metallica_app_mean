@@ -1,15 +1,15 @@
-const User=require("../models/user")
+const User = require("../models/user")
 
-const bcrypt=require("bcryptjs");
+const bcrypt = require("bcryptjs");
 
-const jwt =require("jsonwebtoken");
-
-
+const jwt = require("jsonwebtoken");
 
 
-exports.createUser=(req,resp)=>{
 
-    bcrypt.hash(req.body.password,10).then((hash)=>{
+
+exports.createUser = (req, resp) => {
+
+    bcrypt.hash(req.body.password, 10).then((hash) => {
 
 
         const user = new User({
@@ -17,67 +17,63 @@ exports.createUser=(req,resp)=>{
             password: hash
         })
 
-        user.save().then((result)=>{
+        user.save().then((result) => {
 
 
             resp.status(201).json({
-                message:"User posted successfully",
-                result:result
+                message: "User posted successfully",
+                result: result
             })
-        }).catch((e)=>{
+        }).catch((e) => {
 
 
             resp.status(400).json({
-                message:"Duplicate Email Id, Please provide a new one"
-                
-            })  
+                message: "Duplicate Email Id, Please provide a new one"
+
+            })
         })
     })
 
 }
 
-exports.userLogin=(req,resp)=>{
+exports.userLogin = (req, resp) => {
 
     let fetchedUser;
-    User.findOne({email:req.body.email}).then(user=>{
-        console.log("Ouutttt login")
+    User.findOne({ email: req.body.email }).then(user => {
 
-        console.log(user);
+        if (!user) {
 
-        console.log(req.body.password);
-        if(!user){
 
-            console.log("Inside login")
-          return  resp.status(401).json({
-                message:'Invalid emailId : Auth Failed'
+            return resp.status(401).json({
+                message: 'Invalid emailId : Auth Failed'
             })
         }
 
-        fetchedUser=user;
-       return bcrypt.compare(req.body.password,user.password)
+        fetchedUser = user;
+        return bcrypt.compare(req.body.password, user.password)
 
 
-    }).then(result=>{
- console.log(result);
-        if(!result){
-            return  resp.status(401).json({
-                message:'Invalid password : Auth Failed'
+    }).then(result => {
+
+        if (!result) {
+            return resp.status(401).json({
+                message: 'Invalid password : Auth Failed'
             })
         }
 
-        let token=jwt.sign({email:fetchedUser.email,id:fetchedUser._id},process.env.JWT_TOKEN,{expiresIn:'1h'});
+        let token = jwt.sign({ email: fetchedUser.email, id: fetchedUser._id }, process.env.JWT_TOKEN, { expiresIn: '1h' });
 
 
         resp.status(200).json({
-            
-            token:token,
-            expiresIn:3600,
-            userId:fetchedUser._id
+
+            token: token,
+            expiresIn: 3600,
+            userId: fetchedUser._id
         })
 
-    }).catch(e=>{
+    }).catch(e => {
         resp.status(401).json({
-            message:'Auth Failed'
+            message: 'Auth Failed'
         })
     })
 }

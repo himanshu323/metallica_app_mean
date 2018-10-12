@@ -14,11 +14,11 @@ const log_1 = require("../../utilities/log");
 const Locators = {
     registrationTab: {
         type: BasePage_1.IdentificationType[BasePage_1.IdentificationType.Xpath],
-        value: "//span[text()='Register']"
+        value: "//mat-toolbar//span[text()='Register']"
     },
     loginTab: {
         type: BasePage_1.IdentificationType[BasePage_1.IdentificationType.Xpath],
-        value: "//span[text()='Login']"
+        value: "//mat-toolbar//span[text()='Login']"
     },
     emailField: {
         type: BasePage_1.IdentificationType[BasePage_1.IdentificationType.Name],
@@ -49,6 +49,7 @@ class HomePage extends BasePage_1.BasePage {
     }
     loginToTrade(email, password) {
         return __awaiter(this, void 0, void 0, function* () {
+            // await element(by.xpath("//span[text()='Login']")).click();
             yield this.loginTab.click();
             yield this.emailField.sendKeys(email);
             yield this.passwordField.sendKeys(password);

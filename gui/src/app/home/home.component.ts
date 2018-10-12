@@ -11,8 +11,8 @@ export class HomeComponent implements OnInit {
 
   private authStatusSub: Subscription;
   private authUserRegisteredSub: Subscription;
-  userIsAuthenticated=false;
-  userIsRegistered=false;
+  userIsAuthenticated = false;
+  userIsRegistered = false;
   constructor(private authService: AuthService) { }
 
   ngOnInit() {
@@ -21,16 +21,15 @@ export class HomeComponent implements OnInit {
     this.authStatusSub = this.authService.getAuthStatusListener().subscribe(isAuthenticated => {
       this.userIsAuthenticated = isAuthenticated;
     })
-    this.userIsRegistered=this.authService.getIsRegistered();
-    this.authService.getAuthUserRegisteredListener().subscribe(isReg=>{
-console.log("Insdie Reg", isReg);
-      this.userIsRegistered=isReg;
+    this.userIsRegistered = this.authService.getIsRegistered();
+    this.authService.getAuthUserRegisteredListener().subscribe(isReg => {
+
+      this.userIsRegistered = isReg;
     })
 
-    console.log("Out reg" + this.userIsRegistered);
   }
 
-  
+
   ngOnDestroy(): void {
     this.authStatusSub.unsubscribe();
   }

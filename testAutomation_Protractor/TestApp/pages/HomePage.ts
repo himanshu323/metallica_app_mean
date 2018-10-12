@@ -12,12 +12,12 @@ const Locators = {
 
     registrationTab: {
         type: IdentificationType[IdentificationType.Xpath],
-        value: "//span[text()='Register']"
+        value: "//mat-toolbar//span[text()='Register']"
     }
     ,
     loginTab: {
         type: IdentificationType[IdentificationType.Xpath],
-        value: "//span[text()='Login']"
+        value: "//mat-toolbar//span[text()='Login']"
 
 
     },
@@ -75,7 +75,12 @@ export class HomePage extends BasePage {
 
     async loginToTrade(email:string,password:string) {
 
-        await this.loginTab.click();
+       
+
+       // await element(by.xpath("//span[text()='Login']")).click();
+       await this.loginTab.click();
+
+       
 
         await this.emailField.sendKeys(email);
 

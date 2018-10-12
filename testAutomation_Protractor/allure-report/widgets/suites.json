@@ -1,15 +1,26 @@
 {
-  "total" : 2,
+  "total" : 4,
   "items" : [ {
-    "uid" : "31c26cb58a67a89eacb91fd2858a7104",
-    "name" : "Testing the Bank Manager E2E",
+    "uid" : "7f550bf6e82210d60a3a42b62b5b2ab7",
+    "name" : "Edit Trade Test",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 4
+      "total" : 2
+    }
+  }, {
+    "uid" : "2b13b84cd28d8a9646b0b42f89488847",
+    "name" : "Delete Trade Test",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
     }
   }, {
     "uid" : "63c2dc61807a1bf1faee6f411ce70e9e",
@@ -17,10 +28,21 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 3,
+      "skipped" : 0,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 5
+      "total" : 2
+    }
+  }, {
+    "uid" : "b437604a42efb846334ffb35305d2d21",
+    "name" : "Create Trade Test",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
     }
   } ]
 }

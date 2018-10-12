@@ -1,23 +1,22 @@
-const jwt=require("jsonwebtoken")
+const jwt = require("jsonwebtoken")
 
-module.exports=(req,resp,next)=>{
-try{
-    console.log(req.headers.authorization)
-    const token=req.headers.authorization.split(" ")[1];
+module.exports = (req, resp, next) => {
+    try {
 
-    console.log(token);
-    let decodedToken=jwt.verify(token,process.env.JWT_TOKEN);
+        const token = req.headers.authorization.split(" ")[1];
 
-    req.userData={email:decodedToken.email,id:decodedToken.id}
 
-    console.log(req.userData,"***",decodedToken);
-    next();
+        let decodedToken = jwt.verify(token, process.env.JWT_TOKEN);
 
-}
-catch(error){
+        req.userData = { email: decodedToken.email, id: decodedToken.id }
 
-    return  resp.status(401).json({
-        message:"You are not authenticated"
-    })
-}
+        next();
+
+    }
+    catch (error) {
+
+        return resp.status(401).json({
+            message: "You are not authenticated"
+        })
+    }
 }

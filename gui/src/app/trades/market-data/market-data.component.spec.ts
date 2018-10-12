@@ -15,12 +15,12 @@ describe('MarketDataComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MarketDataComponent ],
-      imports:[HttpClientModule,AngularMaterialModule,BrowserAnimationsModule],
-      providers:[MarketDataService],
+      declarations: [MarketDataComponent],
+      imports: [HttpClientModule, AngularMaterialModule, BrowserAnimationsModule],
+      providers: [MarketDataService],
       schemas: [NO_ERRORS_SCHEMA],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -30,26 +30,26 @@ describe('MarketDataComponent', () => {
   });
 
   it('should create', () => {
-    //fixture.detectChanges();
+
     expect(component).toBeTruthy();
 
-    
+
   });
 
   it('should call get Inital Market status and get Updates set the market status', () => {
-    //fixture.detectChanges();
 
-    let service=TestBed.get(MarketDataService);
-    
-    let marketStatus=[{
+
+    let service = TestBed.get(MarketDataService);
+
+    let marketStatus = [{
       account: "ABC",
       price: 534,
       diff: "+5"
     }]
 
-    let spy=spyOn(service,"getInitialMarketStatus").and.returnValue(of(marketStatus));
+    let spy = spyOn(service, "getInitialMarketStatus").and.returnValue(of(marketStatus));
 
-    let spyUpdates= spyOn(service,"getUpdates").and.returnValue(of(marketStatus));
+    let spyUpdates = spyOn(service, "getUpdates").and.returnValue(of(marketStatus));
     fixture.detectChanges();
     expect(spy).toHaveBeenCalled();
     expect(spyUpdates).toHaveBeenCalled();
@@ -57,6 +57,6 @@ describe('MarketDataComponent', () => {
 
     expect(component.marketStatus).toBe(marketStatus);
 
-    
+
   });
 });

@@ -81,7 +81,7 @@ class TradeGrid extends BasePage_1.BasePage {
                 console.log(side.trim(), sideExp);
                 console.log(counterparty.trim(), counterpartySelectExp);
                 console.log(location.trim(), locationSelectExp);
-                if (!(dateFlag && commodity.trim() === commoditySelectExp &&
+                if (!(commodity.trim() === commoditySelectExp &&
                     side.trim() === sideExp
                     && counterparty.trim() === counterpartySelectExp && location.trim() === locationSelectExp)) {
                     throw Error("Table data validation failed");
@@ -98,7 +98,7 @@ class TradeGrid extends BasePage_1.BasePage {
                 let tradeId = yield protractor_1.element(protractor_1.by.xpath(`//table[@id='tradeTable']/tbody/tr[${i}]//td[contains(@class,'tradeId')]`)).getText();
                 yield console.log("trade id", tradeId);
                 if (tradeId.trim() === tradeIdExp) {
-                    yield protractor_1.element(protractor_1.by.id("deleteButton")).click();
+                    yield protractor_1.element(protractor_1.by.xpath(`//table[@id='tradeTable']/tbody/tr[${i}]//td[contains(@class,'tradeId')]/following-sibling::td[contains(@class,'mat-column-actions')]//button[@id='deleteButton']`)).click();
                     return true;
                 }
             }
@@ -113,7 +113,7 @@ class TradeGrid extends BasePage_1.BasePage {
                 let tradeId = yield protractor_1.element(protractor_1.by.xpath(`//table[@id='tradeTable']/tbody/tr[${i}]//td[contains(@class,'tradeId')]`)).getText();
                 yield console.log("trade id", tradeId);
                 if (tradeId.trim() === tradeIdExp) {
-                    yield protractor_1.element(protractor_1.by.id("editButton")).click();
+                    yield protractor_1.element(protractor_1.by.xpath(`//table[@id='tradeTable']/tbody/tr[${i}]//td[contains(@class,'tradeId')]/following-sibling::td[contains(@class,'mat-column-actions')]//button[@id='editButton']`)).click();
                     return true;
                 }
             }

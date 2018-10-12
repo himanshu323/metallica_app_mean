@@ -157,7 +157,7 @@ await console.log(tradeDate);
        console.log(side.trim(),sideExp )
        console.log(counterparty.trim(),counterpartySelectExp)
        console.log(location.trim(),locationSelectExp)
-    if(!(dateFlag && commodity.trim()===commoditySelectExp &&
+    if(!(commodity.trim()===commoditySelectExp &&
         side.trim()===sideExp 
 
         && counterparty.trim()===counterpartySelectExp && location.trim()===locationSelectExp)
@@ -190,7 +190,8 @@ return true;
        await console.log("trade id",tradeId);
        if(tradeId.trim()===tradeIdExp){
 
-        await element(by.id("deleteButton")).click();
+        await element(by.xpath(`//table[@id='tradeTable']/tbody/tr[${i}]//td[contains(@class,'tradeId')]/following-sibling::td[contains(@class,'mat-column-actions')]//button[@id='deleteButton']`)).click();
+
 
         return true;
        }
@@ -225,7 +226,7 @@ return true;
        await console.log("trade id",tradeId);
        if(tradeId.trim()===tradeIdExp){
 
-        await element(by.id("editButton")).click();
+        await element(by.xpath(`//table[@id='tradeTable']/tbody/tr[${i}]//td[contains(@class,'tradeId')]/following-sibling::td[contains(@class,'mat-column-actions')]//button[@id='editButton']`)).click();
 
         return true;
        }

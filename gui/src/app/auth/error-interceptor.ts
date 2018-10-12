@@ -26,7 +26,7 @@ export class ErrorInterceptor implements HttpInterceptor {
                     errorMessage=error.error.message
                 }
                 
-                console.log("******",error);
+                
                 this.matDialog.open(ErrorComponent,{data:{message:errorMessage}})
                 
                 return throwError(error);

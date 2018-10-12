@@ -1,8 +1,9 @@
 import { element, by, browser } from 'protractor';
-import { IdentificationType, BasePage } from '../../utilities/BasePage';
+import { BasePage } from '../../utilities/BasePage';
 
 
-import { winston as logger } from "../../utilities/log"
+
+
 
 
 
@@ -183,7 +184,7 @@ export class TradeCreate extends BasePage {
         await browser.sleep(10000);
 
 
-        await logger.log("info", "Trade created Successfully");
+      //  await logger.log("info", "Trade created Successfully");
 
 
     }

@@ -9,20 +9,20 @@ import { MarketDataService } from './market-data.service';
 })
 export class MarketDataComponent implements OnInit {
 
-   marketStatus;
+  marketStatus;
 
-  constructor(private marketDataService:MarketDataService) { }
+  constructor(private marketDataService: MarketDataService) { }
 
   ngOnInit() {
 
-    this.marketDataService.getInitialMarketStatus().subscribe((marketStatus)=>{
+    this.marketDataService.getInitialMarketStatus().subscribe((marketStatus) => {
       this.marketStatus = marketStatus;
     });
 
-    this.marketDataService.getUpdates().subscribe((marketStatus)=>{
+    this.marketDataService.getUpdates().subscribe((marketStatus) => {
 
-      this.marketStatus=marketStatus;
-      console.log(marketStatus);
+      this.marketStatus = marketStatus;
+
     })
   }
 

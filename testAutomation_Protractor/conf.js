@@ -30,7 +30,7 @@ exports.config = {
     capabilities: {
         browserName: 'chrome'
     },
-    specs: ['./TestApp/specs/tradeSearchTest.js'],
+    specs: ['./TestApp/specs/tradeCreateTest.js'],
     // You could set no globals to true to avoid jQuery '$' and protractor '$'
     // collisions on the global namespace.
     noGlobals: true,

@@ -17,12 +17,12 @@ describe('HeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeaderComponent ],
-      imports:[FormsModule,AngularMaterialModule,BrowserAnimationsModule,HttpClientModule,RouterTestingModule.withRoutes([])],
-      providers:[AuthService],
+      declarations: [HeaderComponent],
+      imports: [FormsModule, AngularMaterialModule, BrowserAnimationsModule, HttpClientModule, RouterTestingModule.withRoutes([])],
+      providers: [AuthService],
       schemas: [NO_ERRORS_SCHEMA],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -35,47 +35,45 @@ describe('HeaderComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it("should contain router link with signup",()=>{
+  it("should contain router link with signup", () => {
 
-    let des= fixture.debugElement.queryAll(By.directive(RouterLinkWithHref));
- 
-    let index=des.findIndex(de=>de.properties['href']=="/auth/signUp");
- 
+    let des = fixture.debugElement.queryAll(By.directive(RouterLinkWithHref));
+
+    let index = des.findIndex(de => de.properties['href'] == "/auth/signUp");
+
     expect(index).toBeGreaterThan(-1);
- 
- 
-   })
 
-   it("should contain router link with login",()=>{
 
-    let des= fixture.debugElement.queryAll(By.directive(RouterLinkWithHref));
- 
-    let index=des.findIndex(de=>de.properties['href']=="/auth/login");
- 
+  })
+
+  it("should contain router link with login", () => {
+
+    let des = fixture.debugElement.queryAll(By.directive(RouterLinkWithHref));
+
+    let index = des.findIndex(de => de.properties['href'] == "/auth/login");
+
     expect(index).toBeGreaterThan(-1);
- 
- 
-   })
 
 
-   it("should contain router link with trades if user is authenticated",()=>{
+  })
 
 
-    component.userIsAuthenticated=true;
+  it("should contain router link with trades if user is authenticated", () => {
+
+
+    component.userIsAuthenticated = true;
     fixture.detectChanges();
-    let des= fixture.debugElement.queryAll(By.directive(RouterLinkWithHref));
- 
-    let index=des.findIndex(de=>
-      
-      {
-        
-        return de.properties['href']=="/trades"
-    
-      }
+    let des = fixture.debugElement.queryAll(By.directive(RouterLinkWithHref));
+
+    let index = des.findIndex(de => {
+
+      return de.properties['href'] == "/trades"
+
+    }
     );
- 
+
     expect(index).toBeGreaterThan(-1);
- 
- 
-   })
+
+
+  })
 });

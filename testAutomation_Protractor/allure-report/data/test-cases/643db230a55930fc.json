@@ -1,0 +1,87 @@
+{
+  "uid" : "643db230a55930fc",
+  "name" : "edit the trade",
+  "fullName" : "Edit Trade Test.edit the trade",
+  "historyId" : "5003866442c26db4d43eeda853389ebc",
+  "time" : {
+    "start" : 1539349500268,
+    "stop" : 1539349531149,
+    "duration" : 30881
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "daf9cb51533b7b47",
+      "name" : "Screenshot",
+      "source" : "daf9cb51533b7b47.png",
+      "type" : "image/png",
+      "size" : 181895
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Edit Trade Test"
+  }, {
+    "name" : "testClass",
+    "value" : "Edit Trade Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "edit the trade"
+  }, {
+    "name" : "package",
+    "value" : "Edit Trade Test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cd17d28d48739208",
+      "status" : "failed",
+      "statusDetails" : "Failed: Index out of bound. Trying to access element at index: 4, but there are only 2 elements that match locator By(css selector, *[id=\"editButton\"])",
+      "time" : {
+        "start" : 1539349146168,
+        "stop" : 1539349154301,
+        "duration" : 8133
+      }
+    }, {
+      "uid" : "930eefc03ce94081",
+      "status" : "passed",
+      "time" : {
+        "start" : 1539349013608,
+        "stop" : 1539349045760,
+        "duration" : 32152
+      }
+    }, {
+      "uid" : "85de4d995506dea7",
+      "status" : "failed",
+      "statusDetails" : "Failed: unknown error: Element <mat-select _ngcontent-c27=\"\" class=\"mat-select ng-tns-c21-29 mat-select-required ng-untouched ng-pristine ng-star-inserted ng-valid\" name=\"location\" placeholder=\"Location Select\" required=\"\" role=\"listbox\" ng-reflect-required=\"\" ng-reflect-name=\"location\" ng-reflect-placeholder=\"Location Select\" id=\"mat-select-6\" tabindex=\"0\" aria-label=\"Location Select\" aria-required=\"true\" aria-disabled=\"false\" aria-invalid=\"false\" aria-multiselectable=\"false\" ng-reflect-model=\"Denver\">...</mat-select> is not clickable at point (1024, 728). Other element would receive the click: <mat-sidenav-content _ngcontent-c0=\"\" class=\"mat-drawer-content mat-sidenav-content\">...</mat-sidenav-content>\n                  (Session info: chrome=69.0.3497.100)\n                  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64)",
+      "time" : {
+        "start" : 1539348921031,
+        "stop" : 1539348927160,
+        "duration" : 6129
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "643db230a55930fc.json",
+  "parameterValues" : [ ]
+}

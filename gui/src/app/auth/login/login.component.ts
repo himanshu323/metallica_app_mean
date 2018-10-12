@@ -5,45 +5,46 @@ import { Subscription } from "rxjs";
 
 
 @Component({
-    templateUrl:'./login.component.html',
-    styleUrls :['./login.component.css']
+    templateUrl: './login.component.html',
+    styleUrls: ['./login.component.css']
 })
-export class LoginComponent{
+export class LoginComponent {
 
-    // authSub:Subscription;
-    // ngOnDestroy(): void {
-    //     this.authSub.unsubscribe();
-    // }
-
-    isLoading=false;
-
-constructor(private authService:AuthService){
+    updateSub: Subscription;
 
 
-}
+    isLoading = false;
 
-ngOnInit(){
+    constructor(private authService: AuthService) {
 
 
-}
+    }
 
-    onLogin(form:NgForm){
-       
-        this.isLoading=true;
-        if(form.invalid){
-            this.isLoading=false;
+    ngOnInit() {
+
+        this.updateSub = this.authService.getUpdateLog().subscribe(auth => {
+            this.isLoading = false;
+        })
+    }
+
+    onLogin(form: NgForm) {
+
+        this.isLoading = true;
+        if (form.invalid) {
+            this.isLoading = false;
             return;
         }
-        console.log(form);
 
-        
-        console.log("outside");
-        this.authService.login(form.value.email,form.value.password);
+        this.authService.login(form.value.email, form.value.password);
 
 
         form.resetForm();
 
 
 
+    }
+
+    ngOnDestroy(): void {
+        this.updateSub.unsubscribe();
     }
 }

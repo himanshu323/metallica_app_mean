@@ -9,7 +9,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
-const customLocator_1 = require("./customLocator");
 const logger = require("winston");
 var IdentificationType;
 (function (IdentificationType) {
@@ -44,12 +43,6 @@ class BasePage {
                 return protractor_1.element(protractor_1.by.className(obj.value));
             case IdentificationType[IdentificationType.ButtonText]:
                 return protractor_1.element(protractor_1.by.buttonText(obj.value));
-            case IdentificationType[IdentificationType.NgShow]:
-                new customLocator_1.customLocators().addLocators();
-                return protractor_1.element(protractor_1.by.ngShow(obj.value));
-            case IdentificationType[IdentificationType.NgClick]:
-                new customLocator_1.customLocators().addLocators();
-                return protractor_1.element(protractor_1.by.ngClick(obj.value));
             case IdentificationType[IdentificationType.Model]:
                 return protractor_1.element(protractor_1.by.model(obj.value));
         }

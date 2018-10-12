@@ -26,14 +26,14 @@ describe('TradeCreateComponent', () => {
     }
   }
 
-  class ActivatedRouteStub{
-    private subject=new Subject();
+  class ActivatedRouteStub {
+    private subject = new Subject();
 
-    push(value){
+    push(value) {
       this.subject.next(value);
     }
 
-    get paramMap(){
+    get paramMap() {
       return this.subject.asObservable();
     }
   }
@@ -41,8 +41,8 @@ describe('TradeCreateComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [TradeCreateComponent],
-      imports: [ AngularMaterialModule, BrowserAnimationsModule,FormsModule,HttpClientModule],
-      providers: [ TradeService,{ provide: Router, useClass: RouterStub },{ provide: ActivatedRoute, useClass: ActivatedRouteStub }],
+      imports: [AngularMaterialModule, BrowserAnimationsModule, FormsModule, HttpClientModule],
+      providers: [TradeService, { provide: Router, useClass: RouterStub }, { provide: ActivatedRoute, useClass: ActivatedRouteStub }],
       schemas: [NO_ERRORS_SCHEMA],
     })
       .compileComponents();
@@ -50,28 +50,28 @@ describe('TradeCreateComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(TradeCreateComponent);
-   
+
     component = fixture.componentInstance;
-   // fixture.detectChanges();
+
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
 
-  it("check the component is in edit mode when Id is passed through the route",()=>{
+  it("check the component is in edit mode when Id is passed through the route", () => {
 
-    let route=TestBed.get(ActivatedRoute);
-    let id="5765675765657"
-    
+    let route = TestBed.get(ActivatedRoute);
+    let id = "5765675765657"
 
-     let service=TestBed.get(TradeService);
 
-    spyOn(service,"getTrade").and.returnValues(of())
+    let service = TestBed.get(TradeService);
+
+    spyOn(service, "getTrade").and.returnValues(of())
 
     fixture.detectChanges();
 
-    route.push({has:(key)=>true,get:(key)=>id});
+    route.push({ has: (key) => true, get: (key) => id });
 
     expect(component.mode).toBe("edit");
 
@@ -86,34 +86,34 @@ describe('TradeCreateComponent', () => {
   })
 
 
-  it("should call getTrade by Id when the Trade is in edit compoenent ",()=>{
+  it("should call getTrade by Id when the Trade is in edit compoenent ", () => {
 
-    let route=TestBed.get(ActivatedRoute);
-    let id="5765675765657"
-    
+    let route = TestBed.get(ActivatedRoute);
+    let id = "5765675765657"
 
-    let service=TestBed.get(TradeService);
 
-    let spy=spyOn(service,"getTrade").and.returnValues(of())
+    let service = TestBed.get(TradeService);
+
+    let spy = spyOn(service, "getTrade").and.returnValues(of())
 
     fixture.detectChanges();
 
-    route.push({has:(key)=>true,get:(key)=>id});
+    route.push({ has: (key) => true, get: (key) => id });
 
     expect(spy).toHaveBeenCalledWith(id);
 
 
   })
 
-  it("should set the component trade property to the tradeId fetched",()=>{
+  it("should set the component trade property to the tradeId fetched", () => {
 
-    let route=TestBed.get(ActivatedRoute);
-    let id="5765675765657"
-    
+    let route = TestBed.get(ActivatedRoute);
+    let id = "5765675765657"
 
-    let service=TestBed.get(TradeService);
 
-    let trade={
+    let service = TestBed.get(TradeService);
+
+    let trade = {
 
 
       quantity: "99",
@@ -133,16 +133,16 @@ describe('TradeCreateComponent', () => {
 
       _id: "80980890",
 
-      tradeId:"999999",
+      tradeId: "999999",
 
-      creator:"8888888"
+      creator: "8888888"
 
 
     };
 
 
 
-    let expectedTrade={
+    let expectedTrade = {
 
 
       quantity: "99",
@@ -162,46 +162,46 @@ describe('TradeCreateComponent', () => {
 
       id: "80980890",
 
-      tradeId:"999999",
+      tradeId: "999999",
 
-      creator:"8888888"
+      creator: "8888888"
 
 
     };
 
 
-    let spy=spyOn(service,"getTrade").and.returnValues(of(trade))
+    let spy = spyOn(service, "getTrade").and.returnValues(of(trade))
 
     fixture.detectChanges();
 
-    route.push({has:(key)=>true,get:(key)=>id});
+    route.push({ has: (key) => true, get: (key) => id });
 
     //expect(component.trade).toEqual(expectedTrade);
 
 
-    
+
   })
 
-  it("should set tradeCreate to true and route to trades when Trade Create is called",()=>{
+  it("should set tradeCreate to true and route to trades when Trade Create is called", () => {
 
 
-    let router=TestBed.get(Router);
+    let router = TestBed.get(Router);
 
-    let spy=spyOn(router,"navigate").and.returnValues();
-    
+    let spy = spyOn(router, "navigate").and.returnValues();
 
-    
+
+
 
     component.onTradeCreate();
 
-    
+
 
 
     expect(spy).toHaveBeenCalledWith(['/trades']);
 
     expect(component.tradeCreateFlag).toBeTruthy();
 
-    
+
 
 
   })

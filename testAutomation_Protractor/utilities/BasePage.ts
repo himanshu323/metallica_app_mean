@@ -1,5 +1,5 @@
 import { element, by, browser } from 'protractor';
-import { customLocators } from './customLocator';
+
 import * as logger from 'winston';
 
 
@@ -58,14 +58,7 @@ export class BasePage {
             case IdentificationType[IdentificationType.ButtonText]:
                 return element(by.buttonText(obj.value));
 
-            case IdentificationType[IdentificationType.NgShow]:
-                new customLocators().addLocators();
-                return element(by.ngShow(obj.value));
-
-            case IdentificationType[IdentificationType.NgClick]:
-                new customLocators().addLocators();
-                return element(by.ngClick(obj.value));
-
+            
 
             case IdentificationType[IdentificationType.Model]:
                 return element(by.model(obj.value));

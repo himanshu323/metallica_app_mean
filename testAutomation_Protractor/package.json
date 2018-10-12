@@ -29,6 +29,7 @@
     "@angular/router": "~3.2.0",
     "@angular/upgrade": "~2.2.0",
     "core-js": "~2.4.1",
+    "log4js": "^3.0.6",
     "moment": "^2.22.2",
     "ng2f-bootstrap": "~0.0.4",
     "ng2f-server": "~0.2.3",

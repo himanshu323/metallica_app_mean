@@ -19,13 +19,13 @@ app.use((req, res, next) => {
 
 app.get('/api/market', (req, res) => {
 
-    console.log(market.marketPositions);
+   
     res.status(200).send(market.marketPositions);
 });
 
 setInterval(function () {
     market.updateMarket();
-    console.log(market.marketPositions);
+    
     io.sockets.emit('market', market.marketPositions);
 }, 5000);
 

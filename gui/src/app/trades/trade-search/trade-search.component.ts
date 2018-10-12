@@ -13,7 +13,7 @@ import { TradeSearch } from './trade-search.model';
 })
 export class TradeSearchComponent implements OnInit {
 
-  clearFlag:boolean;
+  clearFlag: boolean;
 
   commodities = [
     { value: 'aluminium', viewValue: 'Aluminium' },
@@ -43,48 +43,48 @@ export class TradeSearchComponent implements OnInit {
     { value: 'Singapore', viewValue: 'Singapore' },
     { value: 'Denver', viewValue: 'Denver' }
   ];
-  constructor(private tradeService:TradeService) { }
+  constructor(private tradeService: TradeService) { }
 
   ngOnInit() {
   }
 
 
-  onSearch(form:NgForm){
+  onSearch(form: NgForm) {
 
     if (this.clearFlag) {
 
-      console.log("inside")
+
       form.onReset();
-       this.clearFlag=false;
+      this.clearFlag = false;
       return this.tradeService.getAllTrades();
     }
 
     if (form.invalid) {
-      console.log("Invalid");
+
       return;
     }
 
-    
-
-    
-    
-    
-    console.log(form);
 
 
-    let tradeSearch:TradeSearch={
 
-    tradeFromDate:form.value.fromDate,
-    tradeToDate:form.value.toDate,
-    commodity:form.value.commodity,
-    side:{buy:form.value.buy,sell:form.value.sell},
-    counterparty:form.value.counterparty,
-    location:form.value.location
+
+
+
+
+
+    let tradeSearch: TradeSearch = {
+
+      tradeFromDate: form.value.fromDate,
+      tradeToDate: form.value.toDate,
+      commodity: form.value.commodity,
+      side: { buy: form.value.buy, sell: form.value.sell },
+      counterparty: form.value.counterparty,
+      location: form.value.location
     }
 
     this.tradeService.searchTrade(tradeSearch);
 
-   
+
 
     form.onReset();
   }
